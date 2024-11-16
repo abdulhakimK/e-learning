@@ -144,7 +144,7 @@ header nav ul button:hover {
     z-index: 1;
     position:absolute;
     top:250px;
-    right:200px;
+    right:250px;
 }
 .rectangle2{
     width:150px;
@@ -159,4 +159,57 @@ header nav ul button:hover {
     background-color: blue;
     width:75px;
     height: 75px;
+}
+
+/*-------------------------how it works section----------------------------------------*/
+#how-it-works{
+    padding: 50px;
+    height:1400px;
+    font-family: 'Poppins', sans-serif;
+}
+#how-it-works h2{
+    text-align: center;
+    font-size: 3.5em;
+    color: #0A88FF;
+}
+.steps{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /*align-items: center;*/
+    height:60%;
+    padding-top:200px;
+}
+.step{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width:30%;
+    height:80%;
+    background-color: rgba(255, 255, 255, 0.753);
+    padding:55px 0 55px 0;
+    border-radius: 25px;
+}
+.step:hover{
+    transform: scale(1.3); /* Slight zoom on hover */
+    transition: transform 0.3s ease;
+}
+.stepPic{
+    width:321px;
+    height:371px;
+    object-fit: contain;
+}
+.step h3{
+    font-size:3em;
+}
+.step p{
+    background-color:#A7CCED;
+    font-size: 2em;
+    color: #304D6D;
+    text-align: center;
+    width:574px;
+    height: 149px;
+    border-radius: 15px;
+    padding:0 10px 0 10px;
+    margin:0;
 }
