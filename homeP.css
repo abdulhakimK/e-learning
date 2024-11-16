@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
 body{
     background-color: #E1ECF9;
+    width:100vw;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 /*---------------------------header-------------------------------------------------*/
 /* General header styling */
@@ -77,40 +83,39 @@ header nav ul button:hover {
 
 /*---------------------------hero section-------------------------------------------------*/
 #banner {
-    position:relative;
-    padding: 150px 0px 50px 150px;
+    padding: 150px 0px 50px 0px;
     display: flex;
-    justify-content: space-around;
+    justify-content: end;
     align-items: center;
     height:1000px;
     font-family: 'Poppins', sans-serif;
 }
 
 .banner-content {
-    max-width: 700px; /* Adjust width for better alignment */
+    width: 35%; /* Adjust width for better alignment */
     height:90%;
     padding-left:0;
-    margin-left: 50px;
+    padding-top:100px;
 }
 
 .bannerPic {
     height:90%;
-    width:50%;
+    width:55%;
     align-self: center;
     object-fit: contain;
     flex-shrink: 0;
 }
 .welcome {
-    font-size: 2.5rem; /* Adjust based on visual balance */
+    font-size: 2.3rem; /* Adjust based on visual balance */
     color: #0A88FF;
-    width:800px;
+    width:100%;
 }
 
 #banner p {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     line-height: 1.5;
-    width: 680px;
-    height:480px;
+    width: 100%;
+    height:35%;
     color:#304D6D;
 }
 .cta-button{
@@ -136,25 +141,6 @@ header nav ul button:hover {
 .cta-button a:hover {
     color: #007bff; /* Color change on hover */
 }
-.rectangle1{
-    width:150px;
-    height:150px;
-    background-color: #142747;
-    transform: rotate(45deg); /* Rotate 45 degrees */
-    z-index: 1;
-    position:absolute;
-    top:250px;
-    right:250px;
-}
-.rectangle2{
-    width:150px;
-    height:150px;
-    background-color: white;
-    transform: rotate(45deg); /* Rotate 45 degrees */
-    z-index: 1;
-    position:absolute;
-    bottom:100px;
-}
 .but{
     background-color: blue;
     width:75px;
@@ -164,7 +150,7 @@ header nav ul button:hover {
 /*-------------------------how it works section----------------------------------------*/
 #how-it-works{
     padding: 50px;
-    height:1400px;
+    height:1200px;
     font-family: 'Poppins', sans-serif;
 }
 #how-it-works h2{
@@ -207,9 +193,171 @@ header nav ul button:hover {
     font-size: 2em;
     color: #304D6D;
     text-align: center;
-    width:574px;
+    width:97%;
     height: 149px;
-    border-radius: 15px;
     padding:0 10px 0 10px;
     margin:0;
+}
+/*-------------------------testimonials section----------------------------------------*/
+#testimonials{
+    padding: 50px;
+    height:1200px;
+    width:100%;
+    font-family: 'Poppins', sans-serif;
+    background-color: #C4CFD9;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-around;
+    align-items:center;
+
+}
+.testimonials-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Create 2 equal columns */
+    grid-gap: 50px 450px; /* Space between the boxes */
+    justify-content:stretch ; /* Center the grid within the container */
+    align-items: stretch; /* Vertically align items */
+    padding: 20px; /* Optional: Add padding around the grid */
+    width:80%;
+    height:65%;
+}
+#testimonials h2{
+    text-align: center;
+    font-size: 3.5em;
+    color: #0A88FF;
+}
+.testimonial{
+    height:100%;
+    background-color:#D5E1EC;
+    width:100%;
+    border-radius: 15px;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow for better appearance */
+}
+.testimonial .personel{
+    display:inline;
+}
+.testimonial .personel .name{
+    text-align: center;
+}
+.testimonial .review{
+    width:450px;
+}
+.testimonial .review h4{
+    font-size: 1.5em;
+    color: #0A88FF;
+    margin-bottom: 0;
+}
+.testimonial .review{
+    display:inline;
+}
+.testimonial .personel .name{
+    font-weight: bold;
+    font-size: 1.1em;
+    color:black;
+}
+.testimonial .review p{
+    font-size: 1.1em;
+}
+.testimonial .person {
+    width: 150px; /* Resize images to fit nicely in the smaller boxes */
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 10px; /* Center the image and add some spacing below */
+}
+/*------------------------------------the edu sphere advantage section---------------------------------------*/
+#advantage{
+    font-family: 'Poppins', sans-serif;
+    height:3600px;
+}
+#advantage h2{
+    text-align: center;
+    font-size: 3.5em;
+    color: #0A88FF;
+    margin-bottom:100px;
+}
+#advantage .a{
+    height:1200px;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#advantage .advantage-item{
+    height:1300px;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.advantage-item{
+    height:1200px;
+}
+.advantage-item h3{
+    color:#132646;
+    font-size: 2.2em;
+}
+.advantage-item p{
+    font-size: 1.7em;
+    height:200px;
+    width:90%;
+}
+.advantage-item .discription{
+    width:25%;
+    height:100%;
+}
+.advantage-item .pic{
+    height:100%;
+    width:37%;
+}
+.advantage-item .pic .advPerson{
+    border-radius: 100px;
+    width:700px;
+    height:559px;
+}
+.advantage-item .discription{
+    height:800px;
+}
+.adv_logo{
+    height: 197px;
+    width: 189px;
+    border-radius: 65px;
+    object-fit: contain;
+}
+.pic {
+    position: relative; /* Enable relative positioning for child images */
+}
+.advantage-item  .pic .advPerson1 {
+    position: absolute; /* Allow precise placement */
+    top: 50px; /* Align to the top of the container */
+    right:0; /* Align to the left of the container */
+    z-index: 1; /* Place it behind the second image */
+}
+.advantage-item .pic .advPerson2 {
+    position: absolute; /* Allow precise placement */
+    top: 280px; /* Slightly shift down to create overlap */
+    left: 0; /* Move to the right for partial overlay */
+    z-index: 2; /* Ensure this image appears on top */
+    width: 623px;
+    height: 563px;
+}
+.b .discription{
+    padding-left:85px;
+}
+.b .pic .advPerson1{
+    position: absolute; /* Allow precise placement */
+    top: 50px; /* Align to the top of the container */
+    right:0; /* Align to the left of the container */
+    z-index: 1; /* Place it behind the second image */
+}
+.b .pic .advPerson2{
+    position: absolute; /* Allow precise placement */
+    top: 280px; /* Slightly shift down to create overlap */
+    left: 0; /* Move to the right for partial overlay */
+    z-index: 2; /* Ensure this image appears on top */
+    width: 623px;
+    height: 563px;
 }
