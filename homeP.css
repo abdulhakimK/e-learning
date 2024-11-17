@@ -287,7 +287,7 @@ header nav ul button:hover {
     align-items: center;
 }
 #advantage .advantage-item{
-    height:1300px;
+    height:1138px;
     display:flex;
     flex-direction: row;
     justify-content: center;
@@ -361,3 +361,69 @@ header nav ul button:hover {
     width: 623px;
     height: 563px;
 }
+/*----------------------------------------------------cta section------------------------------------------------------*/
+#cta{
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    height: 512px;
+    background:linear-gradient(90deg,#63ADF2,#122545);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.cta-content img{
+    width:182px;
+    height: 235px;
+    object-fit: contain;
+}
+.cta-content{
+    height: 364px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #E1ECF9;
+    width:70%;
+}
+.cta-text{
+    width:50%;
+}
+.cta-text h2 {
+    height:30%;
+    margin:0;
+    color:#007bff;
+    padding-bottom:30px;
+    font-size:2.7em;
+}
+.cta-text p{
+    height:60%;
+    font-size: 1.5em;
+    color: #304D6D;
+    margin:0;
+    width:95%;
+    font-size:2.0em;
+}
+.cta-button2{
+    background-color: #545E75; /* Primary button color */
+    color: white;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    width:325px;
+    height:66px;
+    border-radius: 30px;
+}
+.cta-button2 a{
+    text-decoration: none;
+    color: white;
+    font-size: 2.0em;
+}
+.cta-button2:hover {
+    background-color: #545e7585;
+}
+
+.cta-button2 a:hover{
+    color:#007bff;
+}
+
+/*-----------------------------------------about section--------------------------------------*/
