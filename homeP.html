@@ -25,7 +25,20 @@
     <!-- Main Banner Section -->
     <section id="banner">
         <div class="banner-content">
-            <h1 class="welcome">Learn, Grow, Succeed—With eduSphere</h1>
+            <h1 class="welcome"></h1>
+            <script>
+                    const welcomeMessage = "Learn, Grow, Succeed—With eduSphere";
+                    let charIndex = 0;
+                    const messageElement = document.querySelector('.welcome');
+                    function typeEffect() {
+                        if (charIndex < welcomeMessage.length) {
+                            messageElement.textContent += welcomeMessage.charAt(charIndex);
+                            charIndex++;
+                            setTimeout(typeEffect, 100);/*the setTimeout function calls the typeEffect function after a delay of 100 milliseconds until the charIndex is less than the length of the welcomeMessage. If the condition is false, the function stops there and doesn't execute the setTimeout(typeEffect, 100); that how we stop the function calling it self*/
+                        }
+                    }
+                    typeEffect();
+            </script>
             <p>Welcome to eduSphere, your trusted 
                 gateway to knowledge and skills. Here, 
                 education meets flexibility. Our platform 
@@ -232,5 +245,7 @@
         <p><img src="./pictures/icon/location.png">AASTU, BLOCK 16.</p>
         <p><a href="mailto:group1@gmail.com" class="mail"><img src="./pictures/icon/mail.png" class="mailpic">group1@gmail.com</a></p>
     </footer>
+    <a href="#" id="back-to-top" class="back-to-top">↑</a>
 </body>
+<script src="homep.js"></script>
 </html>

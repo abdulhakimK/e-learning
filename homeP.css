@@ -603,3 +603,25 @@ footer .mail{
     color:white;
     text-decoration: underline;
 }
+/*----------------------------------------back to the top button--------------------------------*/
+.back-to-top {
+    font-family: 'Poppins', sans-serif;
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    background-color: #0078d7;
+    color: #fff;
+    padding: 15px 25px;
+    border-radius: 5px;
+    text-align: center;
+    font-style: bold;
+    text-decoration: none;
+    font-size: 25px;
+    display: none; /* Hidden by default */
+    transition: opacity 0.3s ease;
+}
+
+.back-to-top:hover {
+    background-color: #005bb5;
+    color: #fff;
+}
