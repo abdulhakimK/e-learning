@@ -177,8 +177,8 @@ header nav ul button:hover {
     border-radius: 25px;
 }
 .step:hover{
-    transform: scale(1.3); /* Slight zoom on hover */
-    transition: transform 0.3s ease;
+    transform: scale(1.1); /* Slight zoom on hover */
+    transition: transform 0.5s ease;
 }
 .stepPic{
     width:321px;
@@ -214,10 +214,10 @@ header nav ul button:hover {
 .testimonials-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Create 2 equal columns */
-    grid-gap: 50px 450px; /* Space between the boxes */
+    grid-gap: 50px 350px; /* Space between the boxes */
     justify-content:stretch ; /* Center the grid within the container */
     align-items: stretch; /* Vertically align items */
-    padding: 20px; /* Optional: Add padding around the grid */
+    padding: 20px; /* Optional: Add padding around the grid*/
     width:80%;
     height:65%;
 }
@@ -297,7 +297,7 @@ header nav ul button:hover {
     height:1200px;
 }
 .advantage-item h3{
-    color:#132646;
+    color: #0A88FF;
     font-size: 2.2em;
 }
 .advantage-item p{
@@ -426,9 +426,120 @@ header nav ul button:hover {
     color:#007bff;
 }
 /*-----------------------------------------courses section--------------------------------------*/
-#courses{
-    height:1200px;
+/* Section Styles */
+#courses-section {
+    padding: 60px 20px;
+    background-color: white;
+    text-align: center;
+    height:750px;
+    font-family: 'Poppins', sans-serif;
 }
+
+#courses-section h2 {
+    margin-bottom: 40px;
+    text-transform: capitalize;
+    position: relative;
+    text-align: center;
+    font-size: 3.5em;
+    color: #0A88FF;
+}
+
+#courses-section h2::after {
+    content: "";
+    width: 80px;
+    height: 4px;
+    background-color: #0078d7;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px;
+}
+
+/* Grid Layout */
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 45px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Course Card Styles */
+.course-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+    height:350px;
+    width:95%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.course-card img{
+    height: 100px;
+    object-fit: contain;
+}
+.course-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.course-icon {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+}
+
+.course-card h3 {
+    font-size: 2.2rem;
+    color: #0078d7;
+    margin: 10px 0;
+}
+
+.course-card p {
+    font-size: 1.2rem;
+    color: #666;
+    margin: 10px 0 20px;
+}
+
+.learn-more {
+    background-color: #0078d7;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.learn-more:hover {
+    background-color: #005bb5;
+}
+
+/* View All Courses Button */
+.view-all-courses {
+    display: inline-block;
+    margin-top: 50px;
+    padding: 10px 25px;
+    background-color: #0078d7;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 12px;
+    font-size: 1.5rem;
+    transition: background-color 0.3s;
+    width:23%;
+}
+
+.view-all-courses:hover {
+    background-color: #005bb5;
+}
+
 /*-----------------------------------------about section--------------------------------------*/
 #about{
     height:1100px;
