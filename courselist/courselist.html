@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course List - eduSphere</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f9f9f9;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #007bff;
+        }
+
+        .course-card {
+            display: flex;
+            align-items: flex-start;
+            padding: 20px;
+            margin-bottom: 20px;
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .course-card img {
+            width: 150px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-right: 20px;
+        }
+
+        .course-content {
+            flex: 1;
+        }
+
+        .course-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .course-description {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 15px;
+            background: #007bff;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        .btn:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="homeP.html" target="_blank"><img src="../pictures/icon/result.png" class="Clogo"></a>
+        <nav>
+            <ul type="">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><button><a href="#">Get Started</a></button></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Available Courses</h1>
+        <!-- Course 1 -->
+        <div class="course-card">
+            <img src="../picture/web-development.jpg" alt="git and github">
+            <div class="course-content">
+                <h3 class="course-title">git and github</h3>
+                <p class="course-description">
+                    Master the essentials of version control using Git and GitHub. Learn how to track changes in your code, collaborate effectively with teams, and manage repositories like a pro. This course is ideal for developers looking to improve workflow efficiency and streamline project collaboration.
+                </p>
+                <a href="#" class="btn">Enroll</a>
+            </div>
+        </div>
+
+        <!-- Course 2 -->
+        <div class="course-card">
+            <img src="../picture/data-science.jpg" alt="HTML">
+            <div class="course-content">
+                <h3 class="course-title">html</h3>
+                <p class="course-description">
+                    Learn the building blocks of web development with HTML (HyperText Markup Language). This course will teach you how to create structured web pages, add text, images, and links, and build a strong foundation for creating engaging and accessible websites. Perfect for beginners looking to start their journey in web development.
+                </p>
+                <a href="#" class="btn">Enroll</a>
+            </div>
+        </div>
+
+        <!-- Course 3 -->
+        <div class="course-card">
+            <img src="../picture/graphic-design.jpg" alt="css">
+            <div class="course-content">
+                <h3 class="course-title">css</h3>
+                <p class="course-description">
+                    Dive into the world of design with CSS (Cascading Style Sheets). This course will guide you through styling web pages, including layout techniques, typography, colors, and responsive design principles. By the end, you'll be able to create visually stunning and mobile-friendly websites.
+                </p>
+                <a href="#" class="btn">Enroll</a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <img src="../pictures/icon/result.png" class="Clogo">
+        <div class="socials">
+            <a href="#" target="_blank"><img src="../pictures/icon/fb.png"></a>
+            <a href="#" target="_blank"></a><img src="../pictures/icon/insta.png"></a>
+            <a href="#" target="_blank"></a><img src="../pictures/icon/tt.png"></a>
+            <a href="#" target="_blank"></a><img src="../pictures/icon/ytube.png"></a>
+        </div>
+        <p>&copy; 2024 Created By Group 1 All Rights Reserved. </p>
+        <p><img src="../pictures/icon/location.png">AASTU, BLOCK 16.</p>
+        <p><a href="mailto:group1@gmail.com" class="mail"><img src="../pictures/icon/mail.png" class="mailpic">group1@gmail.com</a></p>
+    </footer>
+</body>
+</html>
