@@ -14,4 +14,14 @@ document.getElementById("back-to-top").addEventListener("click", function(e) {
     window.scrollTo({ top: 0, behavior: "smooth" });
 });
 
+document.getElementById("courses-link").addEventListener("click", function() {
+    var dropdown = document.getElementById("courses-dropdown");
+    // Toggle the display of the dropdown menu
+    if (dropdown.style.display === "block") {
+        dropdown.style.display = "none";
+    } else {
+        dropdown.style.display = "block";
+    }
+});
+
 

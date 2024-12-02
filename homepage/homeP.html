@@ -14,9 +14,16 @@
         <nav>
             <ul type="">
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Courses</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" id="courses-link">Courses</a>
+                    <ul class="dropdown-menu" id="courses-dropdown">
+                        <li><a href="#">Git and GitHub</a></li>
+                        <li><a href="#">HTML</a></li>
+                        <li><a href="#">CSS</a></li>
+                    </ul>
+                </li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a href="#footer">Contact Us</a></li>
                 <li><button><a href="#">Get Started</a></button></li>
             </ul>
         </nav>
@@ -233,7 +240,7 @@
         </div>
     </section>
     <!-- Footer Section -->
-    <footer>
+    <footer id="footer">
         <img src="../pictures/icon/result.png" class="Clogo">
         <div class="socials">
             <a href="#" target="_blank"><img src="../pictures/icon/fb.png"></a>
