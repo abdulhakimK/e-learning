@@ -4,58 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Git & GitHub - Course Lessons</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #f9f9f9;
-            color: #333;
-        }
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background: #ffffff;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        nav {
-            background-color: #007bff;
-            color: #ffffff;
-            padding: 10px 20px;
-            text-align: center;
-        }
-
-        nav a {
-            color: #ffffff;
-            text-decoration: none;
-            margin: 0 10px;
-            font-weight: bold;
-        }
-
-        h1 {
-            text-align: center;
-            margin-bottom: 20px;
-            color: #007bff;
-        }
-
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        ul li {
-            font-size: 16px;
-            margin: 10px 0;
-            border:solid black 5px;
-        }
-
-        ul li:before {
-            content: "📘 ";
-            color: #007bff;
-        }
-    </style>
+    <link rel="stylesheet" href="../cssforlessonlists.css">
 </head>
 <body>
     <header>
@@ -68,18 +17,60 @@
         </nav>
     </header>
     <nav>
-        <a href="course-list.html">Back to Courses</a>
+        <a href="course-list.html" class="back">Back to Courses</a>
     </nav>
     <div class="container">
         <h1>Git & GitHub</h1>
-        <p>Welcome to the Git & GitHub course! Here are the lessons you will cover:</p>
-        <ul>
-            <li>Lesson 1: Introduction to Version Control <a href="#" target="_blank">go to lesson</a></li>
-            <li>Lesson 2: Setting Up Git<a href="#" target="_blank">go to lesson</a></li>
-            <li>Lesson 3: Basic Git Commands<a href="#" target="_blank">go to lesson</a></li>
-            <li>Lesson 4: Branching and Merging<a href="#" target="_blank">go to lesson</a></li>
-            <li>Lesson 5: Collaborating on GitHub<a href="#" target="_blank">go to lesson</a></li>
+        <p id="welcome">Welcome to the Git & GitHub course!!!</p>
+        <p> This course is designed to guide you through the basics of Git, GitHub, and collaborative workflows, 
+            helping you build a strong foundation for version control and teamwork in software development.</p>
+        <p>Here are the lessons you will cover:</p>
+        <ul class="lesson-list">
+            <li>
+                <div class="separate">Lesson 1: Introduction to Version Control</div>
+                <p>This lesson introduces the concept of version control, explaining its importance in tracking changes and collaborating on projects.</p>
+                <p class="gotolesson"><a href="#" target="_blank">go to lesson</a></p>
+            </li>
+            <li>
+                <div class="separate">Lesson 2: Core Git Commands and Workflow</div>
+                <p>Master the essential Git commands and understand the Git workflow.</p>
+                <p class="gotolesson"><a href="#" target="_blank">go to lesson</a></p>
+            </li>
+            <li>
+                <div class="separate">Lesson 3: Branching and Merging</div>
+                <p>Explore how to work with different versions of code and combine changes.</p>
+                <p class="gotolesson"><a href="#" target="_blank">go to lesson</a></p>
+            </li>
+            <li>
+                <div class="separate">Lesson 4: Introduction to GitHub</div>
+                <p>Understand how to store and share your code using GitHub.</p>
+                <p class="gotolesson"><a href="#" target="_blank">go to lesson</a></p>
+            </li>
+            <li>
+                <div class="separate">Lesson 5: Collaboration with GitHub</div>
+                <p>Learn to collaborate with others on GitHub using pull requests and forks.</p>
+                <p class="gotolesson"><a href="#" target="_blank">go to lesson</a></p>
+            </li>
+            <li>
+                <div class="separate">Final Test</div>
+                <p>Take the test to evaluate your understanding of the course material.</p>
+                <p class="gotolesson"><a href="#" target="_blank">go to test</a></p>
+            </li>
+            <li>
+                <div class="separate">Certificate of Completion</div>
+                <p>Download your certificate to showcase your achievement.</p>
+                <p class="gotolesson"><a href="#" target="_blank">view certificate</a></p>
+            </li>
         </ul>
+        <section class="additional-material">
+            <h2>Additional Resources</h2>
+            <p>Explore more about Git and GitHub:</p>
+            <ul>
+                <li><a href="https://git-scm.com/doc" target="_blank">Git Documentation</a></li>
+                <li><a href="https://docs.github.com/" target="_blank">GitHub Documentation</a></li>
+                <li><a href="https://learngitbranching.js.org/" target="_blank">Interactive Git Tutorial</a></li>
+            </ul>
+        </section>
     </div>
     <footer>
         <img src="../../pictures/icon/result.png" class="Clogo">

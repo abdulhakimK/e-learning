@@ -4,75 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Course List - eduSphere</title>
-    <style>
-        /* body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #f9f9f9;
-            color: #333;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 20px auto;
-            padding: 20px;
-        }
-
-        h1 {
-            text-align: center;
-            margin-bottom: 30px;
-            color: #007bff;
-        }
-
-        .course-card {
-            display: flex;
-            align-items: flex-start;
-            padding: 20px;
-            margin-bottom: 20px;
-            background: #ffffff;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .course-card img {
-            width: 150px;
-            height: 100px;
-            object-fit: cover;
-            border-radius: 8px;
-            margin-right: 20px;
-        }
-
-        .course-content {
-            flex: 1;
-        }
-
-        .course-title {
-            font-size: 18px;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-
-        .course-description {
-            font-size: 14px;
-            color: #555;
-            margin-bottom: 15px;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 10px 15px;
-            background: #007bff;
-            color: #ffffff;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 14px;
-            text-align: center;
-        }
-
-        .btn:hover {
-            background: #0056b3;
-        } */
-    </style>
+    <link rel="stylesheet" href="courselist.css">
 </head>
 <body>
     <!-- Header -->
@@ -84,57 +16,43 @@
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Courses</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><button><a href="#">Get Started</a></button></li>
             </ul>
         </nav>
     </header>
-
     <!-- Main Content -->
     <main>
+        <h1>Available Courses</h1>
         <!-- Available Courses -->
         <section class="container">
-            <h1>Available Courses</h1>
-
             <article class="course-card">
                 <h3 class="course-title">Git and GitHub</h3>
                 <img src="../pictures/github.jpg" alt="Git and GitHub" />
                 <div class="course-content">
-                   
                     <p class="course-description">
                         Master the essentials of version control using Git and GitHub. Learn how to track changes in your code, collaborate effectively with teams, and manage repositories like a pro. This course is ideal for developers looking to improve workflow efficiency and streamline project collaboration.
                     </p>
-                    <a href="#" class="btn">Enroll</a>
+                    <a href="./git and gitHub/git and gitHubLessonList.html" class="btn">Enroll</a>
                 </div>
             </article>
-        </section>
-
-        <!-- Coming Soon Courses -->
-        <section class="container">
-            <h1>Coming Soon Courses</h1>
-
             <article class="course-card">
                 <h3 class="course-title">HTML</h3>
                 <img src="../pictures/HTML.jpg" alt="HTML" width="100px" height="100px"/>
                 <div class="course-content">
                     
                     <p class="course-description">
-                        Learn the building blocks of web development with HTML (HyperText Markup Language). This course will teach you how to create structured web pages, add text, images, and links, and build a strong foundation for creating engaging and accessible websites. Perfect for beginners looking to start their journey in web development.
+                        Learn the building blocks of web development with HTML (HyperText Markup Language). This course will teach you how to create structured web pages, add text, images, and links, and build a strong foundation for creating engaging and accessible websites. Perfect for beginners to start their journey.
                     </p>
-                   
+                    <a href="./html/htmllLessonlist.html" class="btn">Enroll</a>
                 </div>
             </article>
-
             <article class="course-card">
                 <h3 class="course-title">CSS</h3>
                 <img src="../pictures/css.png" alt="CSS" width="100px" height="100px" />
                 <div class="course-content">
-                   
                     <p class="course-description">
                         Dive into the world of design with CSS (Cascading Style Sheets). This course will guide you through styling web pages, including layout techniques, typography, colors, and responsive design principles. By the end, you'll be able to create visually stunning and mobile-friendly websites.
                     </p>
-                   
+                    <a href="./css/cssLessonList.html" class="btn">Enroll</a>
                 </div>
             </article>
         </section>
@@ -145,17 +63,17 @@
         <img src="../pictures/icon/result.png" class="Clogo" alt="Logo" width="100px" height="100px">
         <div class="socials">
             <!-- we will style it Using Css in detail Later on -->
-            <a href="#" target="_blank"><img src="../pictures/icon/fb.png" alt="Facebook" style="background-color:blue"></a>
-            <a href="#" target="_blank"><img src="../pictures/icon/insta.png" alt="Instagram" style="background-color:blue"></a>
-            <a href="#" target="_blank"><img src="../pictures/icon/tt.png" alt="Twitter" style="background-color:blue"></a>
-            <a href="#" target="_blank"><img src="../pictures/icon/ytube.png" alt="YouTube" style="background-color:blue"></a>
+            <a href="#" target="_blank"><img src="../pictures/icon/fb.png" alt="Facebook"></a>
+            <a href="#" target="_blank"><img src="../pictures/icon/insta.png" alt="Instagram"></a>
+            <a href="#" target="_blank"><img src="../pictures/icon/tt.png" alt="Twitter"></a>
+            <a href="#" target="_blank"><img src="../pictures/icon/ytube.png" alt="YouTube"></a>
         </div>
         <p>&copy; 2024 Created By Group 1. All Rights Reserved.</p>
         <address>
-            <p><img src="../pictures/icon/location.png" alt="Location" style="background-color:blue"> AASTU, BLOCK 16.</p>
+            <p><img src="../pictures/icon/location.png" alt="Location"> AASTU, BLOCK 16.</p>
             <p>
                 <a href="mailto:group1@gmail.com" class="mail">
-                    <img src="../pictures/icon/mail.png" class="mailpic" alt="Email"  style="background-color:blue"> group1@gmail.com
+                    <img src="../pictures/icon/mail.png" class="mailpic" alt="Email"> group1@gmail.com
                 </a>
             </p>
         </address>

@@ -4,59 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Fundamentals - Course Lessons</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #f9f9f9;
-            color: #333;
-        }
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background: #ffffff;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        nav {
-            background-color: #007bff;
-            color: #ffffff;
-            padding: 10px 20px;
-            text-align: center;
-        }
-
-        nav a {
-            color: #ffffff;
-            text-decoration: none;
-            margin: 0 10px;
-            font-weight: bold;
-        }
-
-        h1 {
-            text-align: center;
-            margin-bottom: 20px;
-            color: #007bff;
-        }
-
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        ul li {
-            font-size: 16px;
-            margin: 10px 0;
-            border:solid black 5px;
-        }
-
-        ul li:before {
-            content: "📘 ";
-            color: #007bff;
-        }
-    </style>
+    <link rel="stylesheet" href="../cssforlessonlists.css">
 </head>
 <body>
     <header>
@@ -69,17 +17,37 @@
         </nav>
     </header>
     <nav>
-        <a href="course-list.html">Back to Courses</a>
+        <a href="course-list.html" class="back">Back to Courses</a>
     </nav>
     <div class="container">
         <h1>CSS Fundamentals</h1>
         <p>Welcome to the CSS Fundamentals course! Here are the lessons you will cover:</p>
-        <ul>
-            <li>Lesson 1: Introduction to CSS <a href="#" target="_blank">go to lesson</a></li>
-            <li>Lesson 2: Selectors and Properties<a href="#" target="_blank">go to lesson</a></li>
-            <li>Lesson 3: Working with Colors<a href="#" target="_blank">go to lesson</a></li>
-            <li>Lesson 4: Typography and Fonts<a href="#" target="_blank">go to lesson</a></li>
-            <li>Lesson 5: Responsive Design Basics<a href="#" target="_blank">go to lesson</a></li>
+        <ul class="lesson-list">
+            <li>
+                <div class="separate">Lesson 1: Introduction to CSS</div>
+                <p>Learn the basics of CSS, including its purpose, how it works with HTML, and the different ways to apply styles to a webpage.</p>
+                <p class="gotolesson"><a href="#" target="_blank">go to lesson</a></p>
+            </li>
+            <li>
+                <div class="separate">Lesson 2: Selectors and Properties</div>
+                <p>Understand how to use CSS selectors to target HTML elements and apply various properties to style them effectively.</p>
+                <p class="gotolesson"><a href="#" target="_blank">go to lesson</a></p>
+            </li>
+            <li>
+                <div class="separate">Lesson 3: Working with Colors</div>
+                <p>Explore how to add colors to your designs using color names, HEX codes, RGB values, and HSL for vibrant web pages.</p>
+                <p class="gotolesson"><a href="#" target="_blank">go to lesson</a></p>
+            </li>
+            <li>
+                <div class="separate">Lesson 4: Typography and Fonts</div>
+                <p>Learn how to style text with fonts, adjust sizes, and control spacing for visually appealing and readable content.</p>
+                <p class="gotolesson"><a href="#" target="_blank">go to lesson</a></p>
+            </li>
+            <li>
+                <div class="separate">Lesson 5: Responsive Design Basics</div>
+                <p>Discover the foundations of responsive web design, including flexible layouts, media queries, and mobile-first approaches.</p>
+                <p class="gotolesson"><a href="#" target="_blank">go to lesson</a></p>
+            </li>
         </ul>
     </div>
     <footer>

@@ -4,91 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Basics - Course Lessons</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #f9f9f9;
-            color: #333;
-        }
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background: #ffffff;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        nav {
-            background-color: #007bff;
-            color: #ffffff;
-            padding: 10px 20px;
-            text-align: center;
-        }
-
-        nav a {
-            color: #ffffff;
-            text-decoration: none;
-            margin: 0 10px;
-            font-weight: bold;
-        }
-
-        h1 {
-            text-align: center;
-            margin-bottom: 20px;
-            color: #007bff;
-        }
-
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        ul li {
-            font-size: 16px;
-            margin: 10px 0;
-            border:solid black 5px;
-        }
-
-        ul li:before {
-            content: "📘 ";
-            color: #007bff;
-        }
-    </style>
+    <link rel="stylesheet" href="../cssforlessonlists.css">
 </head>
 <body>
     <header>
         <a href="homeP.html" target="_blank"><img src="../../pictures/icon/result.png" class="Clogo"></a>
         <nav>
-            <ul type="">
+            <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Courses</a></li>
             </ul>
         </nav>
     </header>
     <nav>
-        <a href="course-list.html">Back to Courses</a>
+        <a href="course-list.html" class="back">Back to Courses</a>
     </nav>
     <div class="container">
         <h1>HTML Basics</h1>
         <p>Welcome to the HTML Basics course! Here are the lessons you will cover:</p>
-        <ul>
-            <li>Lesson 1: Introduction to HTML <a href="#" target="_blank">go to lesson</a></li>
-            <li>Lesson 2: Structuring a Web Page<a href="#" target="_blank">go to lesson</a></li>
-            <li>Lesson 3: Adding Text and Formatting<a href="#" target="_blank">go to lesson</a></li>
-            <li>Lesson 4: Working with Images and Links<a href="#" target="_blank">go to lesson</a></li>
-            <li>Lesson 5: Working with Images and Links<a href="#" target="_blank">go to lesson</a></li>
+        <ul class="lesson-list">
+            <li>
+                <div class="separate">Lesson 1: Introduction to HTML</div>
+                <p>In this lesson, you will learn the basics of HTML, including the structure of a web page, elements, and attributes. </p>
+                <p class="gotolesson"><a href="#" target="_blank">go to lesson</a></p>
+            </li>
+            <li>
+                <div class="separate">Lesson 2: Structuring a Web Page</div>
+                <p>This lesson covers how to create a well-organized HTML document using semantic elements such as headers, footers, sections, and more.</p>
+                <p class="gotolesson"><a href="#" target="_blank">go to lesson</a></p>
+            </li>
+            <li>
+                <div class="separate">Lesson 3: Adding Text and Formatting</div>
+                <p>Learn how to add and format text in HTML, including paragraphs, headings, bold and italic text, and lists for better presentation.</p>
+                <p class="gotolesson"><a href="#" target="_blank">go to lesson</a></p>
+            </li>
+            <li>
+                <div class="separate">Lesson 4: Working with Images</div>
+                <p>Discover how to embed images into your web page, adjust their size, and add alternative text for accessibility.</p>
+                <p class="gotolesson"><a href="#" target="_blank">go to lesson</a></p>
+            </li>
+            <li>
+                <div class="separate">Lesson 5: Creating Links</div>
+                <p>Understand how to create hyperlinks, link to external websites, internal pages, or specific sections within a page.</p>
+                <p class="gotolesson"><a href="#" target="_blank">go to lesson</a></p>
+            </li>
         </ul>
     </div>
     <footer>
         <img src="../../pictures/icon/result.png" class="Clogo">
         <div class="socials">
             <a href="#" target="_blank"><img src="../../pictures/icon/fb.png"></a>
-            <a href="#" target="_blank"></a><img src="../../pictures/icon/insta.png"></a>
-            <a href="#" target="_blank"></a><img src="../../pictures/icon/tt.png"></a>
-            <a href="#" target="_blank"></a><img src="../../pictures/icon/ytube.png"></a>
+            <a href="#" target="_blank"><img src="../../pictures/icon/insta.png"></a>
+            <a href="#" target="_blank"><img src="../../pictures/icon/tt.png"></a>
+            <a href="#" target="_blank"><img src="../../pictures/icon/ytube.png"></a>
         </div>
         <p>&copy; 2024 Created By Group 1 All Rights Reserved. </p>
         <p><img src="../../pictures/icon/location.png">AASTU, BLOCK 16.</p>
