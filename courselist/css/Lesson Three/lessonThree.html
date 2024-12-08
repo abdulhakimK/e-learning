@@ -3,19 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lesson 3: Branching and Merging</title>
+    <title>Lesson 3: Working with Colors</title>
     <!-- Font Awesome CDN -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="lessonThree.css" />
+    <link rel="stylesheet" href="../Lesson One/lessonOne.css" />
   </head>
   <body>
+    <header>
+      <a href="homeP.html" target="_blank"><img src="../../../pictures/icon/result.png" class="Clogo"></a>
+      <nav>
+          <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Courses</a></li>
+          </ul>
+      </nav>
+  </header>
     <main class="large-container">
       <header class="title-container">
-        <h1>Branching and Merging in Git</h1>
+        <h1>Working with Colors in CSS</h1>
       </header>
       <section class="video-element-container">
         <iframe
-        src="https://www.youtube.com/embed/XX-Kct0PfFc"
+        src="https://www.youtube.com/embed/Ddc-IIrIot0"
         title="YouTube video player"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -24,90 +33,75 @@
       
       </section>
       <article class="note-container">
-        <h2>Lesson 3: Branching and Merging</h2>
+        <h2>Lesson 3: Working with Colors</h2>
         <ul>
           <li>
             <p>
-              <b>What is Branching?</b><br />
-              Branching in Git allows you to create a separate line of development in your project. Think of it as a way to experiment with changes without affecting the main codebase.
+              <b>Color Names:</b><br />
+              CSS allows you to use predefined color names like <code>red</code>, <code>blue</code>, and <code>green</code> for styling. This is an easy way to apply colors without needing to remember codes.
             </p>
           </li>
           <li>
             <p>
-              <b>Key Commands for Branching:</b><br />
-              <ol>
-                <li><code>git branch &lt;branch-name&gt;</code>: Create a new branch.</li>
-                <li><code>git checkout &lt;branch-name&gt;</code>: Switch to an existing branch.</li>
-                <li><code>git checkout -b &lt;branch-name&gt;</code>: Create and switch to a new branch in one step.</li>
-              </ol>
+              <b>HEX Color Codes:</b><br />
+              HEX codes represent colors using a six-character code, starting with a <code>#</code>. For example, <code>#FF5733</code> is a shade of red. Each pair of characters represents the red, green, and blue components of the color.
             </p>
           </li>
           <li>
             <p>
-              <b>What is Merging?</b><br />
-              Merging allows you to integrate changes from one branch into another. It’s typically used to incorporate features or fixes into the main branch.
+              <b>RGB Values:</b><br />
+              The RGB color model is defined using three values for red, green, and blue components, each ranging from 0 to 255. For example, <code>rgb(255, 87, 51)</code> is the same red color as the HEX code above.
             </p>
           </li>
           <li>
             <p>
-              <b>Key Commands for Merging:</b><br />
-              <ol>
-                <li><code>git merge &lt;branch-name&gt;</code>: Merge the specified branch into your current branch.</li>
-                <li><code>git log --graph</code>: View a visual representation of branches and merges.</li>
-              </ol>
+              <b>HSL Values:</b><br />
+              HSL stands for Hue, Saturation, and Lightness. It allows for more intuitive color adjustments. For example, <code>hsl(9, 100%, 60%)</code> gives you a shade of red, similar to the previous examples.
             </p>
           </li>
-          <li>
-            <p>
-              <b>Practical Exercise:</b><br />
-              <h3>1. Create and Switch to a Branch</h3>
-              <ol>
-                <li>Create a branch named <code>feature-branch</code>:  
-                  <ul><li><code>git branch feature-branch</code></li></ul>
-                </li>
-                <li>Switch to the new branch:  
-                  <ul><li><code>git checkout feature-branch</code></li></ul>
-                </li>
-              </ol>
-              <h3>2. Make Changes and Commit</h3>
-              <ol>
-                <li>Edit or create files in your project.</li>
-                <li>Stage and commit the changes:
-                  <ul>
-                    <li><code>git add .</code></li>
-                    <li><code>git commit -m "Added new feature"</code></li>
-                  </ul>
-                </li>
-              </ol>
-              <h3>3. Merge Changes into Main Branch</h3>
-              <ol>
-                <li>Switch back to the main branch:
-                  <ul><li><code>git checkout main</code></li></ul>
-                </li>
-                <li>Merge the changes from <code>feature-branch</code>:
-                  <ul><li><code>git merge feature-branch</code></li></ul>
-                </li>
-              </ol>
-            </p>
-          </li>
+        </ul>
+        <ul>
+          <p>
+            <b>Practical Exercise:</b><br />
+            <h3>1. Use Color Names</h3>
+            <ol>
+              <li>Set the background color of an element to <code>blue</code>:</li>
+              <ul><li><code>background-color: blue;</code></li></ul>
+            </ol>
+            <h3>2. Use HEX Color Codes</h3>
+            <ol>
+              <li>Set the text color to a shade of red using a HEX code:</li>
+              <ul><li><code>color: #FF5733;</code></li></ul>
+            </ol>
+            <h3>3. Use RGB Values</h3>
+            <ol>
+              <li>Set the border color to a green shade using RGB values:</li>
+              <ul><li><code>border-color: rgb(0, 255, 0);</code></li></ul>
+            </ol>
+            <h3>4. Use HSL Values</h3>
+            <ol>
+              <li>Set the background color to a light blue using HSL:</li>
+              <ul><li><code>background-color: hsl(200, 100%, 70%);</code></li></ul>
+            </ol>
+          </p>
         </ul>
       </article>
       <section class="quize-container">
         <article class="question">
           <div class="choice">
             <h2>Question 1</h2>
-            <p>Which command creates a new branch?</p>
+            <p>Which CSS property is used to change the background color of an element?</p>
             <label>
-              <input type="radio" name="q1" value="git branch new-branch" />
-              <span>git branch new-branch</span>
+              <input type="radio" name="q1" value="background-color: blue;" />
+              <span>background-color: blue;</span>
             </label>
             <label>
-              <input type="radio" name="q1" value="git merge new-branch" />
-              <span>git merge new-branch</span>
+              <input type="radio" name="q1" value="color: blue;" />
+              <span>color: blue;</span>
             </label>
             <label>
-              <input type="radio" name="q1" value="git checkout new-branch" />
-              <span>git checkout new-branch</span>
+              <input type="radio" name="q1" value="border-color: blue;" />
+              <span>border-color: blue;</span>
             </label>
             <button id="submit">Submit</button>
           </div>
@@ -115,29 +109,29 @@
         <article class="question">
           <div class="choice">
             <h2>Question 2</h2>
-            <p>What does the <code>git merge</code> command do?</p>
+            <p>What does the <code>rgb(255, 0, 0)</code> value represent?</p>
             <label>
-              <input type="radio" name="q2" value="Switches branches" />
-              <span>Switches branches</span>
+              <input type="radio" name="q2" value="A shade of green" />
+              <span>A shade of green</span>
             </label>
             <label>
-              <input type="radio" name="q2" value="Deletes a branch" />
-              <span>Deletes a branch</span>
+              <input type="radio" name="q2" value="A shade of red" />
+              <span>A shade of red</span>
             </label>
             <label>
-              <input type="radio" name="q2" value="Combines branches" />
-              <span>Combines branches</span>
+              <input type="radio" name="q2" value="A shade of blue" />
+              <span>A shade of blue</span>
             </label>
             <button id="submit-q2">Submit</button>
           </div>
         </article>
       </section>
       <nav class="next-previos-container">
-        <a href="lesson2.html" class="Previous">
+        <a href="../Lesson Two/lessonTwo.html" class="Previous">
           <i class="fa-solid fa-arrow-left"></i>
           <span>Previous</span>
         </a>
-        <a href="lesson4.html" class="Next">
+        <a href="../Lesson Four/lessonfour.html" class="Next">
           <span>Next</span>
           <i class="fa-solid fa-arrow-right"></i>
         </a>

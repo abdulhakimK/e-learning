@@ -3,19 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lesson 4: Introduction to GitHub</title>
+    <title>Lesson 4: Typography and Fonts</title>
     <!-- Font Awesome CDN -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="lessonFour.css">
+    <link rel="stylesheet" href="../Lesson One/lessonOne.css">
   </head>
   <body>
+    <header>
+      <a href="homeP.html" target="_blank"><img src="../../../pictures/icon/result.png" class="Clogo"></a>
+      <nav>
+          <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Courses</a></li>
+          </ul>
+      </nav>
+  </header>
     <main class="large-container">
       <header class="title-container">
-        <h1>Lesson 4: Introduction to GitHub</h1>
+        <h1>Lesson 4: Typography and Fonts</h1>
       </header>
       <section class="video-element-container">
         <iframe
-          src="https://www.youtube.com/embed/w3jLJU7DT5E"
+          src="https://www.youtube.com/embed/klXyJWlIzuY"
           title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -23,117 +32,98 @@
         </iframe>
       </section>
       <article class="note-container">
-        <h2>What is GitHub?</h2>
+        <h2>What is Typography?</h2>
         <ul>
           <li>
             <p>
-              <b>GitHub</b> is a popular online platform where you can store, manage, and collaborate on Git repositories. 
-              It acts like a bridge between developers, enabling them to share their code, track changes, and work together 
-              efficiently on projects.
+              <b>Typography</b> is the art and technique of arranging text. It involves selecting typefaces, adjusting sizes, spacing, and line lengths to ensure that text is readable, visually appealing, and effective.
             </p>
           </li>
           <li>
             <p>
-              Think of GitHub as a digital workspace for developers. It provides tools to organize and maintain code 
-              projects, whether you're working solo or with a team.
+              Typography plays a crucial role in web design, as it helps convey a message clearly while making the content look attractive and professional.
             </p>
           </li>
         </ul>
-        <h2>Key Steps to Use GitHub</h2>
+        <h2>Basic Typography Concepts</h2>
+        <ul>
+          <li>
+            <p><b>Fonts and Typefaces:</b> A font is a set of characters in a specific style, size, and weight. A typeface refers to the overall design of the set of fonts.
+            </p>
+          </li>
+          <li>
+            <p><b>Font Size:</b> The size of the text is measured in points (pt). Typical body text is between 12px and 16px, while headings are larger to emphasize importance.
+            </p>
+          </li>
+          <li>
+            <p><b>Font Weight:</b> Font weight controls the thickness of the text. Common values include <b>normal</b> and <b>bold</b>, but there are many options like <b>lighter</b>, <b>bolder</b>, etc.
+            </p>
+          </li>
+          <li>
+            <p><b>Line Height:</b> Line height defines the space between lines of text. It’s essential for readability, particularly in larger blocks of text.
+            </p>
+          </li>
+        </ul>
+        <h2>How to Use Fonts in CSS</h2>
         <ul>
           <li>
             <p>
-              <b>1. Create a GitHub Account:</b> 
-              Visit <a href="https://github.com" target="_blank">GitHub</a> and sign up for a free account. It's the first step to getting started with GitHub.
-            </p>
-          </li>
-          <li>
-            <p>
-              <b>2. Create a New Repository:</b> 
-              A repository is where your project lives on GitHub. To create one:
-              <ol>
-                <li>Log in to your GitHub account.</li>
-                <li>Click the green <b>"New"</b> button in the repositories section.</li>
-                <li>Provide a name for your repository (e.g., "MyFirstRepo").</li>
-                <li>Choose visibility (Public or Private) and click <b>"Create Repository."</b></li>
-              </ol>
-            </p>
-          </li>
-          <li>
-            <p>
-              <b>3. Link Your Local Git Repository to GitHub:</b>
-              Use the command below in your terminal to link your local repository with the GitHub repository:
+              To use fonts in CSS, you can set the <code>font-family</code> property to choose the desired font. Here's an example of how to use the <b>Arial</b> font:
               <pre>
-git remote add origin https://github.com/username/repository.git
+font-family: Arial, sans-serif;
               </pre>
-              Replace <b>username</b> with your GitHub username and <b>repository</b> with your repository name.
             </p>
           </li>
           <li>
             <p>
-              <b>4. Push Your Changes to GitHub:</b> 
-              Once your work is ready, push it to GitHub with the following command:
+              You can also use web fonts from services like <a href="https://fonts.google.com" target="_blank">Google Fonts</a> by adding a <code>link</code> tag in your HTML file:
               <pre>
-git push -u origin main
+      &lt;link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
               </pre>
-              This uploads your changes to the <b>main</b> branch of the GitHub repository.
+              Then, apply the font in your CSS:
+              <pre>
+font-family: 'Roboto', sans-serif;
+              </pre>
             </p>
           </li>
         </ul>
         <h2>Practical Exercise</h2>
         <ul>
           <li>
-            <p><b>Step 1:</b> Create a new repository on GitHub.</p>
+            <p><b>Step 1:</b> Choose a font family for your webpage from Google Fonts.</p>
           </li>
           <li>
-            <p><b>Step 2:</b> Initialize a local Git repository, add some code, and commit your changes.</p>
+            <p><b>Step 2:</b> Add the chosen font to your HTML file and apply it to the body of your page.</p>
           </li>
           <li>
-            <p><b>Step 3:</b> Link the local repository to your GitHub repository using the <code>git remote add</code> command.</p>
+            <p><b>Step 3:</b> Experiment with font sizes, line heights, and font weights to make your text more readable and visually appealing.</p>
           </li>
           <li>
-            <p><b>Step 4:</b> Push your changes to GitHub using <code>git push</code>.</p>
-          </li>
-          <li>
-            <p><b>Step 5:</b> Open GitHub and view your uploaded project.</p>
+            <p><b>Step 4:</b> Adjust the spacing between paragraphs to improve the layout of your content.</p>
           </li>
         </ul>
-        <p>
-          Once you complete these steps, your code will be safely stored online, accessible from anywhere, and 
-          ready for collaboration.
-        </p>
       </article>
       <section class="quize-container">
         <!-- Question 1 -->
         <article class="question">
           <div class="choice">
             <h2>Question 1</h2>
-            <p>What is the main purpose of GitHub?</p>
+            <p>What property is used to change the font of a webpage in CSS?</p>
             <label>
-              <input type="radio" name="q1" value="To compile programming code" class="inputq1" />
-              <span>To compile programming code</span>
+              <input type="radio" name="q1" value="font-size" class="inputq1" />
+              <span>font-size</span>
             </label>
             <label>
-              <input
-                type="radio"
-                name="q1"
-                value="To store and collaborate on Git repositories"
-                class="inputq1"
-              />
-              <span>To store and collaborate on Git repositories</span>
+              <input type="radio" name="q1" value="font-family" class="inputq1" />
+              <span>font-family</span>
             </label>
             <label>
-              <input type="radio" name="q1" value="To create new programming languages" class="inputq1" />
-              <span>To create new programming languages</span>
+              <input type="radio" name="q1" value="font-weight" class="inputq1" />
+              <span>font-weight</span>
             </label>
             <label>
-              <input
-                type="radio"
-                name="q1"
-                value="To delete old code projects"
-                class="inputq1"
-              />
-              <span>To delete old code projects</span>
+              <input type="radio" name="q1" value="line-height" class="inputq1" />
+              <span>line-height</span>
             </label>
             <button id="submit" class="q1">Submit</button>
           </div>
@@ -143,34 +133,34 @@ git push -u origin main
         <article class="question">
           <div class="choice">
             <h2>Question 2</h2>
-            <p>What does linking your local repository to GitHub allow you to do?</p>
+            <p>Which of the following is a common web font service?</p>
             <label>
-              <input type="radio" name="q2" value="Upload changes to GitHub" />
-              <span>Upload changes to GitHub</span>
+              <input type="radio" name="q2" value="Google Fonts" />
+              <span>Google Fonts</span>
             </label>
             <label>
-              <input type="radio" name="q2" value="Share your repository link with collaborators" />
-              <span>Share your repository link with collaborators</span>
+              <input type="radio" name="q2" value="Typekit" />
+              <span>Typekit</span>
             </label>
             <label>
-              <input type="radio" name="q2" value="Both of the above" />
-              <span>Both of the above</span>
+              <input type="radio" name="q2" value="Font Squirrel" />
+              <span>Font Squirrel</span>
             </label>
             <label>
-              <input type="radio" name="q2" value="None of the above" />
-              <span>None of the above</span>
+              <input type="radio" name="q2" value="All of the above" />
+              <span>All of the above</span>
             </label>
             <button id="submit-q2">Submit</button>
           </div>
         </article>
       </section>
       <nav class="next-previos-container">
-        <a href="lesson3.html" class="Previous">
+        <a href="../Lesson Three/lessonThree.html" class="Previous">
           <i class="fa-solid fa-arrow-left"></i>
           <span> Previous</span>
         </a>
         
-        <a href="lesson5.html" class="Next">
+        <a href="../Lesson Five/lessonFive.html" class="Next">
           <span> Next</span>
           <i class="fa-solid fa-arrow-right"></i>
         </a>
