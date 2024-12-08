@@ -248,8 +248,9 @@ input[type="radio"] {
     justify-content: center;
     align-items: center;
     border: 2px solid rgb(32, 21, 255);
-    width: 120px;
+    width: 150px;
     height: 50px;
+    gap:5px;
     border-radius: 5px;
     text-decoration: none;
     color: black;
@@ -267,4 +268,11 @@ input[type="radio"] {
     color: white; /* Improves visibility on hover */
     border: none;
   }
-  
+  .Nexttoquiz{
+    background-color: rgb(32, 21, 255);
+    width:190px !important;
+    display:flex;
+    justify-content: space-between;
+    color:white !important;
+    gap:5px;
+  }
