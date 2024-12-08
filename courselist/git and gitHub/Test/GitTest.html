@@ -10,6 +10,7 @@
   <header>
     <h1>Git and GitHub  Test</h1>
   </header>
+  <div id="timer"></div>
   <main>
     <form id="quiz-form">
 <!-- Question 1 -->
@@ -23,7 +24,7 @@
           <label><input type="radio" name="q1" value="A file-sharing tool"> D) A file-sharing tool</label>
         </fieldset>
       </section>
-       <!-- Question 2 -->
+      <!-- Question 2 -->
       <section>
         <h2>Question 2</h2>
         <p>What is the purpose of a version control system like Git?</p>
@@ -34,7 +35,7 @@
           <label><input type="radio" name="q2" value="To run server applications"> D) To run server applications</label>
         </fieldset>
       </section>
-       <!-- Question 3 -->
+      <!-- Question 3 -->
       <section>
         <h2>Question 3</h2>
         <p>What is GitHub?</p>
@@ -248,11 +249,17 @@
                 <label><input type="radio" name="q20" value="Neither command downloads changes"> D) Neither command downloads changes</label>
               </fieldset>
             </section>
-      
       <footer>
         <button id="submit" type="submit">Submit Quiz</button>
       </footer>
+      <div id="result-container" class="hidden">
+        <div id="result">
+          <h1>Your Score: <span id="score"></span></h1>
+          <p id="message"></p>
+        </div>
+      </div>
     </form>
   </main>
 </body>
+<script src="GitTest.js"></script>
 </html>
