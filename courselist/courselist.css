@@ -130,6 +130,7 @@ main{
     display:flex;
     flex-direction: row;
     justify-content: space-evenly;
+    gap:20px;
 }
 
 h1 {
@@ -228,3 +229,13 @@ footer .a{
     color:white;
     text-decoration: none;
 }
+
+
+  /* For mobile phones: less than 768px width and tablet  */
+  @media (max-width: 1024px) {
+    .container {
+      flex-flow: column nowrap;
+      gap:40px;
+    }
+  }
+  
