@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     const correctAnswers = {
-    q1: "Fetch and merge changes from GitHub",
-    q2: "By forking their repository and submitting a pull request",
+    q1: "Specifies the destination URL",
+    q2: "Add target attribute with value _blank to the link tag",
 };
 document.getElementById("submit").addEventListener("click", function () {
     const selectedAnswer = document.querySelector('input[name="q1"]:checked');
@@ -14,10 +14,10 @@ document.getElementById("submit").addEventListener("click", function () {
     if (selectedAnswer) {
     const userAnswer = selectedAnswer.value;
     if (userAnswer === correctAnswers.q1) {
-        resultDiv.textContent = "Correct! Fetch and merge changes from GitHub is the answer";
+        resultDiv.textContent = "Correct! Specifies the destination URL is the answer";
         resultDiv.style.color = "green";
     } else {
-        resultDiv.textContent = "Incorrect! The correct answer is: 'Fetch and merge changes from GitHub'.";
+        resultDiv.textContent = "Incorrect! The correct answer is: 'Specifies the destination URL'.";
         resultDiv.style.color = "red";
     }
     } else {
@@ -44,10 +44,10 @@ document.getElementById("submit").addEventListener("click", function () {
     if (selectedAnswer) {
     const userAnswer = selectedAnswer.value;
     if (userAnswer === correctAnswers.q2) {
-        resultDiv.textContent = "Correct! By forking their repository and submitting a pull request is the answeer";
+        resultDiv.textContent = "Correct! Add target=\"_blank\" to the link tag is the answeer";
         resultDiv.style.color = "green";
     } else {
-        resultDiv.textContent = "Incorrect! The correct answer is: 'By forking their repository and submitting a pull request'.";
+        resultDiv.textContent = "Incorrect! The correct answer is: 'Add target=\"_blank\" to the link tag'.";
         resultDiv.style.color = "red";
     }
     } else {

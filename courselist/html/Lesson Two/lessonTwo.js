@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     const correctAnswers = {
-    q1: "git init",
-    q2: "Adds all files to staging",
+    q1: "<nav>",
+    q2: "Groups related content",
 };
 document.getElementById("submit").addEventListener("click", function () {
     const selectedAnswer = document.querySelector('input[name="q1"]:checked');
@@ -14,10 +14,10 @@ document.getElementById("submit").addEventListener("click", function () {
     if (selectedAnswer) {
     const userAnswer = selectedAnswer.value;
     if (userAnswer === correctAnswers.q1) {
-        resultDiv.textContent = "Correct! git init is the answer";
+        resultDiv.textContent = "Correct! <nav> is the answer";
         resultDiv.style.color = "green";
     } else {
-        resultDiv.textContent = "Incorrect! The correct answer is: 'git init'.";
+        resultDiv.textContent = "Incorrect! The correct answer is: '<nav>'.";
         resultDiv.style.color = "red";
     }
     } else {
@@ -44,10 +44,10 @@ document.getElementById("submit").addEventListener("click", function () {
     if (selectedAnswer) {
     const userAnswer = selectedAnswer.value;
     if (userAnswer === correctAnswers.q2) {
-        resultDiv.textContent = "Correct! The git add . command Adds all files to staging";
+        resultDiv.textContent = "Correct! The <section> element Groups related content";
         resultDiv.style.color = "green";
     } else {
-        resultDiv.textContent = "Incorrect! The correct answer is: 'Adds all files to staging'.";
+        resultDiv.textContent = "Incorrect! The correct answer is: 'Groups related content'.";
         resultDiv.style.color = "red";
     }
     } else {

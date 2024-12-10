@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     const correctAnswers = {
-    q1: "A version control system",
-    q2: "It tracks changes and manages code versions",
+    q1: "A markup language for creating web pages",
+    q2: "A property that provides additional information about an element",
 };
 document.getElementById("submit").addEventListener("click", function () {
     const selectedAnswer = document.querySelector('input[name="q1"]:checked');
@@ -14,10 +14,10 @@ document.getElementById("submit").addEventListener("click", function () {
     if (selectedAnswer) {
     const userAnswer = selectedAnswer.value;
     if (userAnswer === correctAnswers.q1) {
-        resultDiv.textContent = "Correct! Git is a version control system.";
+        resultDiv.textContent = "Correct! HTML is A markup language for creating web pages";
         resultDiv.style.color = "green";
     } else {
-        resultDiv.textContent = "Incorrect! The correct answer is: 'A version control system'.";
+        resultDiv.textContent = "Incorrect! The correct answer is: 'A markup language for creating web pages'.";
         resultDiv.style.color = "red";
     }
     } else {
@@ -44,10 +44,10 @@ document.getElementById("submit").addEventListener("click", function () {
     if (selectedAnswer) {
     const userAnswer = selectedAnswer.value;
     if (userAnswer === correctAnswers.q2) {
-        resultDiv.textContent = "Correct! Git tracks changes and manages code versions.";
+        resultDiv.textContent = "Correct! attribute is A property that provides additional information about an element";
         resultDiv.style.color = "green";
     } else {
-        resultDiv.textContent = "Incorrect! The correct answer is: 'It tracks changes and manages code versions'.";
+        resultDiv.textContent = "Incorrect! The correct answer is: 'A property that provides additional information about an element'.";
         resultDiv.style.color = "red";
     }
     } else {

@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     const correctAnswers = {
-    q1: "To store and collaborate on Git repositories",
-    q2: "Both of the above",
+    q1: "src",
+    q2: "To provide alternative text for the image",
 };
 document.getElementById("submit").addEventListener("click", function () {
     const selectedAnswer = document.querySelector('input[name="q1"]:checked');
@@ -14,10 +14,10 @@ document.getElementById("submit").addEventListener("click", function () {
     if (selectedAnswer) {
     const userAnswer = selectedAnswer.value;
     if (userAnswer === correctAnswers.q1) {
-        resultDiv.textContent = "Correct! To store and collaborate on Git repositories is the answer";
+        resultDiv.textContent = "Correct! src is the answer";
         resultDiv.style.color = "green";
     } else {
-        resultDiv.textContent = "Incorrect! The correct answer is: 'To store and collaborate on Git repositories'.";
+        resultDiv.textContent = "Incorrect! The correct answer is: 'src'.";
         resultDiv.style.color = "red";
     }
     } else {
@@ -44,10 +44,10 @@ document.getElementById("submit").addEventListener("click", function () {
     if (selectedAnswer) {
     const userAnswer = selectedAnswer.value;
     if (userAnswer === correctAnswers.q2) {
-        resultDiv.textContent = "Correct! Both of the above can be the answeer";
+        resultDiv.textContent = "Correct! To provide alternative text for the image is the answer";
         resultDiv.style.color = "green";
     } else {
-        resultDiv.textContent = "Incorrect! The correct answer is: 'Both of the above'.";
+        resultDiv.textContent = "Incorrect! The correct answer is: 'To provide alternative text for the image'.";
         resultDiv.style.color = "red";
     }
     } else {

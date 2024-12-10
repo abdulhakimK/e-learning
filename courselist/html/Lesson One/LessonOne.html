@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lesson 1: What is Git?</title>
+    <title>Lesson 1: Introduction to HTML</title>
     <!-- Font Awesome CDN -->
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
@@ -13,62 +13,59 @@
   </head>
   <body>
     <header>
-      <a href="homeP.html" target="_blank"><img src="../../../pictures/icon/result.png" class="Clogo"></a>
+      <a href="homeP.html" target="_blank">
+        <img src="../../../pictures/icon/result.png" class="Clogo" />
+      </a>
       <nav>
-          <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Courses</a></li>
-          </ul>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Courses</a></li>
+        </ul>
       </nav>
-  </header>
+    </header>
     <main class="large-container">
       <header class="title-container">
-        <h1>Lesson 1: What is Git?</h1>
+        <h1>Lesson 1: Introduction to HTML</h1>
       </header>
       <section class="video-element-container">
         <iframe
-          src="https://www.youtube.com/embed/2ReR1YJrNOM"
+          src="https://www.youtube.com/embed/5w10hFm33_E"
           title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen>
-        ></iframe>
+        </iframe>
       </section>
       <article class="note-container">
-        <h2>What is Git?</h2>
+        <h2>Introduction to HTML</h2>
         <ul>
           <li>
             <p>
-              <b>Git</b> is a version control system that helps developers
-              manage changes to their code and collaborate with others.
+              <b>HTML (HyperText Markup Language)</b> is the standard language for creating web pages and web applications.
             </p>
           </li>
           <li>
             <p>
-              Imagine you’re working on a project, and you accidentally delete
-              something important. Without Git, it might be hard to recover.
-              With Git, every version of your project is saved, and you can go
-              back to any previous version easily.
+              HTML provides the basic structure of a web page, which is enhanced and modified by technologies like CSS and JavaScript.
             </p>
           </li>
           <li>
             <p>
-              <b>Key Features of Git:</b>
+              <b>Key Components of HTML:</b>
               <ul>
-                <li><b>Tracks changes:</b> Git keeps a record of all modifications made to files.</li>
-                <li><b>Collaboration:</b> Multiple people can work on the same project without overwriting each other's changes.</li>
-                <li><b>Branching:</b> Allows you to experiment with new ideas without affecting the main project.</li>
-                <li><b>Reverts and Recovery:</b> You can undo mistakes and recover older versions of your work.</li>
+                <li><b>Elements:</b> These define the structure and content of a webpage, such as paragraphs, headings, images, and links.</li>
+                <li><b>Tags:</b> Tags are used to mark the beginning and end of an element, like <code>&lt;p&gt;</code> for paragraphs.</li>
+                <li><b>Attributes:</b> Attributes provide additional information about an element, such as <code>class</code> or <code>id</code>.</li>
               </ul>
             </p>
           </li>
           <li>
             <p>
-              <b>Why is Git Important?</b>
+              <b>Why Learn HTML?</b>
               <ol>
-                <li>Saves time and avoids confusion when working in a team.</li>
-                <li>Helps organize projects efficiently.</li>
-                <li>Makes it easy to track who changed what and when.</li>
+                <li>It is the foundation of web development.</li>
+                <li>Understanding HTML helps in building and structuring websites.</li>
+                <li>It enables better collaboration with designers and developers.</li>
               </ol>
             </p>
           </li>
@@ -76,19 +73,13 @@
         <h2>Practical Exercise</h2>
         <ul>
           <li>
-            <p><b>Step 1:</b> Install Git on your system.</p>
+            <p><b>Step 1:</b> Create a new HTML file with the extension <code>.html</code>.</p>
           </li>
           <li>
-            <p>
-              <b>Step 2:</b> Initialize a local Git repository and make some
-              changes to a file.
-            </p>
+            <p><b>Step 2:</b> Write a basic HTML structure using the <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>, and <code>&lt;body&gt;</code> tags.</p>
           </li>
           <li>
-            <p>
-              <b>Step 3:</b> Use Git commands like <b>git status</b>, <b>git add</b>, and
-              <b>git commit</b> to track your changes.
-            </p>
+            <p><b>Step 3:</b> Add content such as headings, paragraphs, and links.</p>
           </li>
         </ul>
       </article>
@@ -97,7 +88,7 @@
         <article class="question">
           <div class="choice">
             <h2>Question 1</h2>
-            <p>What is Git?</p>
+            <p>What is HTML?</p>
             <label>
               <input
                 type="radio"
@@ -111,28 +102,28 @@
               <input
                 type="radio"
                 name="q1"
-                value="A version control system"
+                value="A style sheet language"
                 class="inputq1"
               />
-              <span>A version control system</span>
+              <span>A style sheet language</span>
             </label>
             <label>
               <input
                 type="radio"
                 name="q1"
-                value="A web development tool"
+                value="A markup language for creating web pages"
                 class="inputq1"
               />
-              <span>A web development tool</span>
+              <span>A markup language for creating web pages</span>
             </label>
             <label>
               <input
                 type="radio"
                 name="q1"
-                value="An operating system"
+                value="An image editing software"
                 class="inputq1"
               />
-              <span>An operating system</span>
+              <span>An image editing software</span>
             </label>
             <button id="submit" class="q1">Submit</button>
           </div>
@@ -142,38 +133,38 @@
         <article class="question">
           <div class="choice">
             <h2>Question 2</h2>
-            <p>What is a key feature of Git?</p>
+            <p>What is an attribute in HTML?</p>
             <label>
               <input
                 type="radio"
                 name="q2"
-                value="It automatically writes code for you"
+                value="A programming function"
               />
-              <span>It automatically writes code for you</span>
+              <span>A programming function</span>
             </label>
             <label>
               <input
                 type="radio"
                 name="q2"
-                value="It tracks changes and manages code versions"
+                value="A style applied to HTML elements"
               />
-              <span>It tracks changes and manages code versions</span>
+              <span>A style applied to HTML elements</span>
             </label>
             <label>
               <input
                 type="radio"
                 name="q2"
-                value="It provides free hosting for websites"
+                value="A property that provides additional information about an element"
               />
-              <span>It provides free hosting for websites</span>
+              <span>A property that provides additional information about an element</span>
             </label>
             <label>
               <input
                 type="radio"
                 name="q2"
-                value="It compiles programming code"
+                value="A tool for debugging websites"
               />
-              <span>It compiles programming code</span>
+              <span>A tool for debugging websites</span>
             </label>
             <button id="submit-q2">Submit</button>
           </div>

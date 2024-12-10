@@ -1,158 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lesson 3: Branching and Merging</title>
-    <!-- Font Awesome CDN -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="../Lesson One/lessonOne.css" />
-  </head>
-  <body>
-    <header>
-      <a href="homeP.html" target="_blank"><img src="../../../pictures/icon/result.png" class="Clogo"></a>
-      <nav>
-          <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Courses</a></li>
-          </ul>
-      </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lesson 3: Adding Text and Formatting</title>
+  <!-- Font Awesome CDN -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../Lesson One/lessonOne.css" />
+</head>
+<body>
+  <header>
+    <a href="homeP.html" target="_blank"><img src="../../../pictures/icon/result.png" class="Clogo"></a>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Courses</a></li>
+      </ul>
+    </nav>
   </header>
-    <main class="large-container">
-      <header class="title-container">
-        <h1>Branching and Merging in Git</h1>
-      </header>
-      <section class="video-element-container">
-        <iframe
-        src="https://www.youtube.com/embed/XX-Kct0PfFc"
+  <main class="large-container">
+    <header class="title-container">
+      <h1>Lesson 3: Adding Text and Formatting</h1>
+    </header>
+    <section class="video-element-container">
+      <iframe
+        src="https://www.youtube.com/embed/PBYO5JbJsYc"
         title="YouTube video player"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen>
       </iframe>
-      
-      </section>
-      <article class="note-container">
-        <h2>Lesson 3: Branching and Merging</h2>
-        <ul>
-          <li>
-            <p>
-              <b>What is Branching?</b><br />
-              Branching in Git allows you to create a separate line of development in your project. Think of it as a way to experiment with changes without affecting the main codebase.
-            </p>
-          </li>
-          <li>
-            <p>
-              <b>Key Commands for Branching:</b><br />
-              <ol>
-                <li><code>git branch &lt;branch-name&gt;</code>: Create a new branch.</li>
-                <li><code>git checkout &lt;branch-name&gt;</code>: Switch to an existing branch.</li>
-                <li><code>git checkout -b &lt;branch-name&gt;</code>: Create and switch to a new branch in one step.</li>
-              </ol>
-            </p>
-          </li>
-          <li>
-            <p>
-              <b>What is Merging?</b><br />
-              Merging allows you to integrate changes from one branch into another. It’s typically used to incorporate features or fixes into the main branch.
-            </p>
-          </li>
-          <li>
-            <p>
-              <b>Key Commands for Merging:</b><br />
-              <ol>
-                <li><code>git merge &lt;branch-name&gt;</code>: Merge the specified branch into your current branch.</li>
-                <li><code>git log --graph</code>: View a visual representation of branches and merges.</li>
-              </ol>
-            </p>
-          </li>
-          </ul>
+    </section>
+    <article class="note-container">
+      <h2>Lesson Overview</h2>
+      <ul>
+        <li>
+          <b>Adding Headings:</b>
+          <p>HTML provides six levels of headings, from <code>&lt;h1&gt;</code> (largest) to <code>&lt;h6&gt;</code> (smallest). Use these to structure your content.</p>
+          <pre><code>&lt;h1&gt;This is a main heading&lt;/h1&gt;</code></pre>
+        </li>
+        <li>
+          <b>Paragraphs:</b>
+          <p>To add paragraphs, use the <code>&lt;p&gt;</code> tag. Paragraphs create spacing around text to improve readability.</p>
+          <pre><code>&lt;p&gt;This is a paragraph of text.&lt;/p&gt;</code></pre>
+        </li>
+        <li>
+          <b>Text Formatting:</b>
           <ul>
-            <p>
-              <b>Practical Exercise:</b><br />
-              <h3>1. Create and Switch to a Branch</h3>
-              <ol>
-                <li>Create a branch named <code>feature-branch</code>:  
-                  <ul><li><code>git branch feature-branch</code></li></ul>
-                </li>
-                <li>Switch to the new branch:  
-                  <ul><li><code>git checkout feature-branch</code></li></ul>
-                </li>
-              </ol>
-              <h3>2. Make Changes and Commit</h3>
-              <ol>
-                <li>Edit or create files in your project.</li>
-                <li>Stage and commit the changes:
-                  <ul>
-                    <li><code>git add .</code></li>
-                    <li><code>git commit -m "Added new feature"</code></li>
-                  </ul>
-                </li>
-              </ol>
-              <h3>3. Merge Changes into Main Branch</h3>
-              <ol>
-                <li>Switch back to the main branch:
-                  <ul><li><code>git checkout main</code></li></ul>
-                </li>
-                <li>Merge the changes from <code>feature-branch</code>:
-                  <ul><li><code>git merge feature-branch</code></li></ul>
-                </li>
-              </ol>
-            </p>
+            <li><code>&lt;b&gt;</code>: Bold text. Example: <code>&lt;b&gt;Bold Text&lt;/b&gt;</code></li>
+            <li><code>&lt;i&gt;</code>: Italicize text. Example: <code>&lt;i&gt;Italic Text&lt;/i&gt;</code></li>
+            <li><code>&lt;u&gt;</code>: Underline text. Example: <code>&lt;u&gt;Underlined Text&lt;/u&gt;</code></li>
           </ul>
-        </ul>
+        </li>
+        <li>
+          <b>Lists:</b>
+          <p>HTML offers two types of lists:</p>
+          <ol>
+            <li><b>Ordered List:</b> Use <code>&lt;ol&gt;</code> with <code>&lt;li&gt;</code> for numbered items.</li>
+            <li><b>Unordered List:</b> Use <code>&lt;ul&gt;</code> with <code>&lt;li&gt;</code> for bullet points.</li>
+            <li><b>Defination list:</b> Use <code>&lt;dl&gt;</code> with <code>&lt;dt&gt;</code> for bullet points. and with <code>&lt;dd&gt;</code> for defination</li>
+          </ol>
+          <pre><code>
+&lt;ul&gt;
+  &lt;li&gt;Item 1&lt;/li&gt;
+  &lt;li&gt;Item 2&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Step 1&lt;/li&gt;
+  &lt;li&gt;Step 2&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;dl&gt;
+  &lt;dt&gt;HTML&lt;/dt&gt;
+  &lt;dd&gt; - Hypertext Markup Language. &lt;dd&gt;
+  &lt;dt&gt;CSS&lt;/dt&gt;
+  &lt;dd&gt; - cascading style sheet. &lt;dd&gt;
+  &lt;dt&gt;JS&lt;/dt&gt;
+  &lt;dd&gt; - JavaScript &lt;dd&gt;
+&lt;/dl&gt;
+
+          </code></pre>
+        </li>
+      </ul>
+    </article>
+    <section class="quize-container">
+      <article class="question">
+        <div class="choice">
+          <h2>Question 1</h2>
+          <p>Which tag is used to create a paragraph?</p>
+          <label>
+            <input type="radio" name="q1" value="&lt;h1&gt;" />
+            <span>&lt;h1&gt;</span>
+          </label>
+          <label>
+            <input type="radio" name="q1" value="&lt;p&gt;" />
+            <span>&lt;p&gt;</span>
+          </label>
+          <label>
+            <input type="radio" name="q1" value="&lt;div&gt;" />
+            <span>&lt;div&gt;</span>
+          </label>
+          <button id="submit">Submit</button>
+        </div>
       </article>
-      <section class="quize-container">
-        <article class="question">
-          <div class="choice">
-            <h2>Question 1</h2>
-            <p>Which command creates a new branch?</p>
-            <label>
-              <input type="radio" name="q1" value="git branch new-branch" />
-              <span>git branch new-branch</span>
-            </label>
-            <label>
-              <input type="radio" name="q1" value="git merge new-branch" />
-              <span>git merge new-branch</span>
-            </label>
-            <label>
-              <input type="radio" name="q1" value="git checkout new-branch" />
-              <span>git checkout new-branch</span>
-            </label>
-            <button id="submit">Submit</button>
-          </div>
-        </article>
-        <article class="question">
-          <div class="choice">
-            <h2>Question 2</h2>
-            <p>What does the <code>git merge</code> command do?</p>
-            <label>
-              <input type="radio" name="q2" value="Switches branches" />
-              <span>Switches branches</span>
-            </label>
-            <label>
-              <input type="radio" name="q2" value="Deletes a branch" />
-              <span>Deletes a branch</span>
-            </label>
-            <label>
-              <input type="radio" name="q2" value="Combines branches" />
-              <span>Combines branches</span>
-            </label>
-            <button id="submit-q2">Submit</button>
-          </div>
-        </article>
-      </section>
-      <nav class="next-previos-container">
-        <a href="../Lesson Two/lessonTwo.html" class="Previous">
-          <i class="fa-solid fa-arrow-left"></i>
-          <span>Previous</span>
-        </a>
-        <a href="../Lesson Four/lessonfour.html" class="Next">
-          <span>Next</span>
-          <i class="fa-solid fa-arrow-right"></i>
-        </a>
-      </nav>
-    </main>
-    <script src="lessonThree.js"></script>
-  </body>
+      <article class="question">
+        <div class="choice">
+          <h2>Question 2</h2>
+          <p>Which of the following tags creates a list with bullet points?</p>
+          <label>
+            <input type="radio" name="q2" value="&lt;ol&gt;" />
+            <span>&lt;ol&gt;</span>
+          </label>
+          <label>
+            <input type="radio" name="q2" value="&lt;ul&gt;" />
+            <span>&lt;ul&gt;</span>
+          </label>
+          <label>
+            <input type="radio" name="q2" value="&lt;li&gt;" />
+            <span>&lt;li&gt;</span>
+          </label>
+          <button id="submit-q2">Submit</button>
+        </div>
+      </article>
+    </section>
+    <nav class="next-previos-container">
+      <a href="../Lesson Two/lessonTwo.html" class="Previous">
+        <i class="fa-solid fa-arrow-left"></i>
+        <span>Previous</span>
+      </a>
+      <a href="../Lesson Four/lessonfour.html" class="Next">
+        <span>Next</span>
+        <i class="fa-solid fa-arrow-right"></i>
+      </a>
+    </nav>
+  </main>
+  <script src="lessonThree.js"></script>
+</body>
 </html>

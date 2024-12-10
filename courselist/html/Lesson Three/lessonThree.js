@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     const correctAnswers = {
-    q1: "git branch new-branch",
-    q2: "Combines branches",
+    q1: "<p>",
+    q2: "<ul>",
 };
 document.getElementById("submit").addEventListener("click", function () {
     const selectedAnswer = document.querySelector('input[name="q1"]:checked');
@@ -14,10 +14,10 @@ document.getElementById("submit").addEventListener("click", function () {
     if (selectedAnswer) {
     const userAnswer = selectedAnswer.value;
     if (userAnswer === correctAnswers.q1) {
-        resultDiv.textContent = "Correct! git branch new-branch is the answer";
+        resultDiv.textContent = "Correct! <p> is the answer";
         resultDiv.style.color = "green";
     } else {
-        resultDiv.textContent = "Incorrect! The correct answer is: 'git branch new-branch'.";
+        resultDiv.textContent = "Incorrect! The correct answer is: '<p>'.";
         resultDiv.style.color = "red";
     }
     } else {
@@ -44,10 +44,10 @@ document.getElementById("submit").addEventListener("click", function () {
     if (selectedAnswer) {
     const userAnswer = selectedAnswer.value;
     if (userAnswer === correctAnswers.q2) {
-        resultDiv.textContent = "Correct! The git merge command Combines branches";
+        resultDiv.textContent = "Correct! <ul> creates list with bullet points";
         resultDiv.style.color = "green";
     } else {
-        resultDiv.textContent = "Incorrect! The correct answer is: 'Combines branches'.";
+        resultDiv.textContent = "Incorrect! The correct answer is: '<ul>'.";
         resultDiv.style.color = "red";
     }
     } else {
