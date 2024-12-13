@@ -1,17 +1,32 @@
 //<!-- temporary script -->
-function enroll() {
-    // Check if the user came from the "View All Courses" button
-    const params = new URLSearchParams(window.location.search);
-    const from = params.get('from');
+const params = new URLSearchParams(window.location.search);
+const course = params.get('from');
 
-    if (from === 'hero') {
-      // If they came from "View All Courses," go to the sign-up page
-    window.location.href = '../../courselist/courselist.html?redirect=fromhome';
-    } else {
-      // Otherwise, go to the default sign-up flow
-    window.location.href = 'signup.html?redirect=courses';
+const enter=document.querySelector('.btn');
+enter.addEventListener('click', () => {
+    if (!authForm.checkValidity()) 
+        {
+        authForm.reportValidity();
     }
-} 
+    if (course === "course1") {
+        enter.href="../../courselist/git and gitHub/git and gitHubLessonList.html";
+    }
+    else if(course=="course2")
+    {
+        enter.href="../../courselist/html/htmlLessonList.html";
+    }
+    else if(course=="course3")
+    {
+        enter.href="../../courselist/css/cssLessonList.html";
+    }
+    else
+    {
+        enter.href="../../courselist/courselist.html";
+    }
+})
+/*addEventListener("click",function (e){
+
+})"*/ 
 const formTitle = document.getElementById("form-title");
     const authForm = document.getElementById("auth-form");
     const toggleLink = document.getElementById("toggle-link");
@@ -27,7 +42,7 @@ const formTitle = document.getElementById("form-title");
                     <label for="password">Password</label>
                     <input type="password" id="password" name="password" placeholder="Enter your password" required>
                 </div>
-                <button type="submit" class="btn" onclick = "enroll()">Login</button>
+                <a class="btn" href="">Log In</a>
             `;
             toggleLink.textContent = "Don't have an account? Sign Up";
         } else {
@@ -45,7 +60,7 @@ const formTitle = document.getElementById("form-title");
                 <label for="password">Password</label>
                 <input type="password" id="password" name="password" placeholder="Enter your password" required>
             </div>
-            <button type="submit" class="btn" onclick = "enroll()">Sign Up</button>
+            <a class="btn" href="">Sign Up</a>
             `;
             toggleLink.textContent = "Already have an account? Login";
         }
