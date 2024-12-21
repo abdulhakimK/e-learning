@@ -51,3 +51,70 @@ body {
     width: 200px;
     margin: 0 auto 10px;
   }
+@media (max-width: 768px) {
+  .certificate {
+      width: 90%;
+      padding: 20px;
+      border-width: 8px; 
+  }
+
+  .certificate h1 {
+      font-size: 2em; 
+  }
+
+  .certificate h2 {
+      font-size: 1.5em; 
+  }
+
+  .certificate p {
+      font-size: 1em; 
+  }
+
+  .signatures {
+    justify-content: right;
+    margin-top: 40px;
+  }
+
+  .signature-line {
+      width: 150px; 
+  }
+
+  .signature {
+      font-size: 20px; 
+  }
+
+  .title {
+      font-size: 12px !important; 
+  }
+}
+
+@media (max-width: 480px) {
+  .certificate {
+      padding: 15px;
+      border-width: 6px; 
+  }
+
+  .certificate h1 {
+      font-size: 1.5em;
+  }
+
+  .certificate h2 {
+      font-size: 1em;
+  }
+
+  .certificate p {
+      font-size: 0.7em;
+  }
+
+  .signature {
+      font-size: 18px;
+  }
+
+  .signature-line {
+      width: 120px; 
+  }
+
+  .title {
+      font-size: 10px !important;
+  }
+}

@@ -74,7 +74,7 @@ header nav ul button {
     border-radius: 30px;
     cursor: pointer;
     transition: background-color 0.3s;
-    width:250px;
+    width:100%;
     font-size: 1em;
 }
 header nav ul button a{
@@ -162,7 +162,6 @@ header nav ul li .dropdown-menu li a:hover {
     font-size: 2.2rem;
     line-height: 1.5;
     width: 100%;
-    height:45%;
     color:#304D6D;
 }
 .cta-button{
@@ -176,7 +175,7 @@ header nav ul li .dropdown-menu li a:hover {
     border-radius: 50px;
     cursor: pointer;
     transition: background-color 0.3s;
-    width:500px;
+    width:100%;
     height:75px;
 }
 .cta-button:hover {
@@ -211,16 +210,16 @@ header nav ul li .dropdown-menu li a:hover {
     justify-content: space-around;
     /*align-items: center;*/
     height:60%;
-    padding-top:200px;
+    padding-top:10%;
 }
 .step{
     display:flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
     width:30%;
-    height:80%;
     background-color: rgba(255, 255, 255, 0.753);
-    padding:55px 0 55px 0;
+    padding:55px 0 0 0;
     border-radius: 25px;
 }
 .step:hover{
@@ -228,8 +227,8 @@ header nav ul li .dropdown-menu li a:hover {
     transition: transform 0.5s ease;
 }
 .stepPic{
-    width:321px;
-    height:371px;
+    width:55%;
+    height:57%;
     object-fit: contain;
 }
 .step h3{
@@ -240,14 +239,14 @@ header nav ul li .dropdown-menu li a:hover {
     font-size: 2em;
     color: #304D6D;
     text-align: center;
-    width:97%;
-    height: 149px;
-    padding:0 10px 0 10px;
+    padding:20px;
     margin:0;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
 }
 /*-------------------------testimonials section----------------------------------------*/
 #testimonials{
-    padding: 50px;
+    padding: 50px 0;
     height:1200px;
     width:100%;
     font-family: 'Poppins', sans-serif;
@@ -261,7 +260,7 @@ header nav ul li .dropdown-menu li a:hover {
 .testimonials-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Create 2 equal columns */
-    grid-gap: 50px 350px; /* Space between the boxes */
+    grid-gap: 50px 20%; /* Space between the boxes */
     justify-content:stretch ; /* Center the grid within the container */
     align-items: stretch; /* Vertically align items */
     padding: 20px; /* Optional: Add padding around the grid*/
@@ -285,12 +284,15 @@ header nav ul li .dropdown-menu li a:hover {
 }
 .testimonial .personel{
     display:inline;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .testimonial .personel .name{
     text-align: center;
 }
 .testimonial .review{
-    width:450px;
+    width:65%;
 }
 .testimonial .review h4{
     font-size: 1.5em;
@@ -334,7 +336,7 @@ header nav ul li .dropdown-menu li a:hover {
     align-items: center;
 }
 #advantage .advantage-item{
-    height:1138px;
+    height:1090px;
     display:flex;
     flex-direction: row;
     justify-content: center;
@@ -362,8 +364,8 @@ header nav ul li .dropdown-menu li a:hover {
 }
 .advantage-item .pic .advPerson{
     border-radius: 100px;
-    width:700px;
-    height:559px;
+    width: 70%;
+    height: 50%;
 }
 .advantage-item .discription{
     height:800px;
@@ -380,19 +382,16 @@ header nav ul li .dropdown-menu li a:hover {
 }
 .advantage-item  .pic .advPerson1 {
     position: absolute; 
-    top: 50px;
+    top: 5%;
     right:0; 
-    z-index: 1; /* Place it behind the second image */
-    width: 600px;
-    height: 500px;
+    z-index: 1; 
+    object-fit:cover;
 }
 .advantage-item .pic .advPerson2 {
-    position: absolute; /* Allow precise placement */
-    top: 280px; /* Slightly shift down to create overlap */
-    left: 0; /* Move to the right for partial overlay */
-    z-index: 2; /* Ensure this image appears on top */
-    width: 600px;
-    height: 500px;
+    position: absolute; 
+    top: 30%; 
+    left: 0; 
+    z-index: 2; 
     object-fit:cover;
 }
 .b .discription{
@@ -409,14 +408,12 @@ header nav ul li .dropdown-menu li a:hover {
     top: 280px; /* Slightly shift down to create overlap */
     left: 0; /* Move to the right for partial overlay */
     z-index: 2; /* Ensure this image appears on top */
-    width: 623px;
-    height: 563px;
 }
 /*----------------------------------------------------cta section------------------------------------------------------*/
 #cta{
     font-family: 'Poppins', sans-serif;
     width: 100%;
-    height: 512px;
+    height: 518px;
     background:linear-gradient(90deg,#63ADF2,#122545);
     display:flex;
     justify-content: center;
@@ -460,7 +457,7 @@ header nav ul li .dropdown-menu li a:hover {
     border: none;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
-    width:325px;
+    width:25%;
     height:66px;
     border-radius: 30px;
 }
@@ -482,7 +479,7 @@ header nav ul li .dropdown-menu li a:hover {
     padding: 60px 20px;
     background-color: white;
     text-align: center;
-    height:750px;
+    height:758px;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -506,7 +503,6 @@ header nav ul li .dropdown-menu li a:hover {
     bottom: -10px;
 }
 
-/* Grid Layout */
 .courses-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -593,7 +589,7 @@ header nav ul li .dropdown-menu li a:hover {
 
 /*-----------------------------------------about section--------------------------------------*/
 #about{
-    height:1100px;
+    height:1200px;
     background-image:linear-gradient(90deg,rgba(10,136,255,59%),rgba(10,136,255,59%)),url(../pictures/girl-writing-on-the-sofa-picjumbo-com.jpg);
     /*background-attachment: fixed;*/
     background-position: center;/*centers the background image*/
@@ -627,7 +623,7 @@ footer{
     background-color: #142747;
     color:white;
     font-family: 'Poppins', sans-serif;
-    height:380px;
+    height:381px;
 }
 footer .Clogo {
     width: 130px; /* Adjust based on your image size */
@@ -677,3 +673,259 @@ footer .mail{
     background-color: #005bb5;
     color: #fff;
 }
+
+/*-------------------------media queries----------------------------------------*/ 
+@media screen and (max-width: 1150px) {
+    /* Stack the logo and navigation items vertically */
+    /*header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }*/
+    
+    /*header .Clogo {
+        width: 120px; /* Resize the logo
+        height: auto;
+        margin-bottom: 15px;
+    }*/
+
+    /* Adjust navigation items */
+   /* header nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-right: 0;
+    }*/
+
+    /*header nav ul li {
+        margin: 10px 0; /* Space between menu items 
+    }*/
+
+    header nav ul li a {
+        font-size: 1.2em; 
+    }
+
+    header nav ul button {
+        width: 100%; 
+        padding: 12px 20px;
+    }
+    header nav ul button a{
+        font-size: 1.2em;
+    }
+    header nav ul li.dropdown:hover .dropdown-menu {
+        display: block;
+    }
+    header nav ul li .dropdown-menu li a {
+        font-size: 1.2em;
+    }
+    .banner-content h1{
+        font-size: 1.8em;
+    }
+    .banner-content .content_p{
+        font-size:1.79em !important;
+    }
+    .banner-content .cta-button a{
+        font-size:0.9em;
+    }
+    #how-it-works h2{
+        font-size: 2.8em;
+    }
+    #how-it-works p{
+        font-size: 1.5em;
+    }
+    #how-it-works h3{
+        font-size: 2.2em;
+    }
+    #how-it-works .stepPic{
+        width:70%;
+        height:70%;
+    }
+    #testimonials h2{
+        font-size: 2.8em;
+    }
+    .testimonial .person{
+        width: 100px; /* Resize images to fit nicely in the smaller boxes */
+        height: 100px;
+    }
+    .testimonial .personel .name
+    {
+        font-size: 0.8em;
+    }
+    .advantage-item .discription p{
+        font-size: 1.5em;
+    }
+    .advantage-item .discription h3
+    {
+        font-size: 2em;
+    }
+    .advantage-item .pic .advPerson, .advPerson1
+    {
+        object-fit: fill;
+    }
+    .advantage-item .pic .advPerson1
+    {
+        object-fit: fill;
+    }
+    #cta .cta-content .cta-text h2
+    {
+        font-size: 1.8em;
+    }
+    #cta .cta-content .cta-text p
+    {
+        font-size: 1.2em;
+    }
+    .cta-content img{
+        width: 80px;
+        height: 80px;
+    }
+    .cta-content button
+    {
+        width:20%;
+    }
+    .cta-content button a
+    {
+        font-size: 1.5em;
+    }
+    #courses-section h2{
+        font-size: 2.8em;
+    }
+    .courses-grid h3{
+        font-size: 1.5em;
+    }
+    .course-card p{
+        font-size: 1em;
+    }
+
+    .view-all-courses{
+        font-size: 1.2em;
+    }
+    .learn-more{
+        font-size: 1em;
+    }
+    #footer p{
+        font-size:1.2em;
+    }
+}
+
+/* For mobile devices with width 480px or less */
+@media screen and (max-width: 955px) {
+
+    header nav ul li a {
+        font-size: 1em; 
+    }
+
+    header nav ul button {
+        width: 100%; 
+        padding: 12px 20px;
+    }
+    header nav ul button a{
+        font-size: 1em;
+    }
+    header nav ul li.dropdown:hover .dropdown-menu {
+        display: block;
+    }
+    header nav ul li .dropdown-menu li a {
+        font-size: 1em;
+    }
+    .banner-content h1{
+        font-size: 1.5em;
+    }
+    .banner-content .content_p{
+        font-size:1.59em !important;
+    }
+    .banner-content .cta-button a{
+        font-size:0.8em;
+    }
+    #how-it-works h2{
+        font-size: 2.3em;
+    }
+    #how-it-works p{
+        font-size: 1.1em;
+    }
+    #how-it-works h3{
+        font-size: 1.8em;
+    }
+    .testimonial .review p{
+        font-size: 0.8em;
+    }
+    .testimonials-container{
+        height:55%;
+    }
+    .advantage-item .discription p{
+        font-size: 1.2em;
+    }
+    .advantage-item .discription h3
+    {
+        font-size: 1.7em;
+    }
+    .cta-content button
+    {
+        height:56px;
+    }
+}
+@media screen and (max-width: 1491px)
+{
+    .testimonial .review{
+        width:55%;
+    }
+} 
+@media screen and (max-width: 1379px)
+{
+    .testimonial .review{
+        font-size: 0.8em;
+    }
+} 
+@media screen and (max-width: 1685px) 
+{
+    #cta .cta-content .cta-text h2
+    {
+        font-size: 2em;
+    }
+    #cta .cta-content .cta-text p
+    {
+        font-size: 1.5em;
+    }
+    .cta-content img{
+        width: 100px;
+        height: 100px;
+    }
+}
+@media screen and (max-width: 2114px)
+{
+    #about .aboutContent p{
+        font-size: 2.1em;
+    }
+}
+@media screen and (max-width: 1875px)
+{
+    #about .aboutContent p{
+        font-size: 2em;
+    }
+}
+@media screen and (max-width: 1717px)
+{
+    #about .aboutContent p{
+        font-size: 1.8em;
+    }
+}
+@media screen and (max-width: 1498px)
+{
+    .aboutContent img{
+        width:690px;
+        height:704px;
+    }
+}
+@media screen and (max-width: 1172px)
+{
+    .aboutContent img{
+        width:590px;
+        height:604px;
+    }
+    #about .aboutContent p{
+        font-size: 1.5em;
+    }
+    #about h3
+    {
+        font-size: 2em;
+    }
+}
+

@@ -69,7 +69,7 @@ function displayResult(score) {
     document.getElementById("score").textContent = score + " out of " + Object.keys(answers).length;
     // Hide the quiz container and show the result container
     document.getElementById("result-container").classList.remove("hidden");
-    if (score >= 1) {
+    if (score >= 10) {
         document.getElementById("message").textContent = "Congratulations! You passed the test. you can view your results in below link. please ScreenShot and store your certificate ";
         document.getElementById("message").style.color = "green";
         const link = document.createElement("a");
