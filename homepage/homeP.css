@@ -11,6 +11,17 @@ body, html {
 html {
     scroll-behavior: smooth;
 }
+/* Animation */
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%); /* Start completely off the screen to the left */
+        opacity: 0; /* Start invisible */
+    }
+    100% {
+        transform: translateX(0); /* End at its original position */
+        opacity: 1; /* Fully visible */
+    }
+}
 /*--------------------------header-------------------------------------------------*/
 /* General header styling */
 header {
@@ -24,6 +35,7 @@ header {
     width:100%;
     height:auto;
     margin-top:15px;
+    position: relative;
 }
 
 /* Logo styling */
@@ -137,7 +149,6 @@ header nav ul li .dropdown-menu li a:hover {
     height:1000px;
     font-family: 'Poppins', sans-serif;
 }
-
 .banner-content {
     width: 35%; /* Adjust width for better alignment */
     height:90%;
@@ -145,16 +156,18 @@ header nav ul li .dropdown-menu li a:hover {
     padding-top:100px;
 }
 
+
 .bannerPic {
-    height:90%;
+    height:50%;
     width:55%;
     align-self: center;
     object-fit: contain;
     flex-shrink: 0;
 }
 .welcome {
-    font-size: 2.3rem; /* Adjust based on visual balance */
+    font-size: 2.3rem;/* Adjust based on visual balance */
     color: #0A88FF;
+    animation: slideIn 2s ease-in-out infinite;
     width:100%;
 }
 
@@ -168,12 +181,11 @@ header nav ul li .dropdown-menu li a:hover {
     background-color: #545E75; /* Primary button color */
     color: white;
     border: none;
-    padding: 10px 20px;
+    padding: 10px 30px;
     font-family: 'Poppins', sans-serif;
-    font-size:2em;
+    font-size:1.5em;
     font-weight: bold;
     border-radius: 50px;
-    cursor: pointer;
     transition: background-color 0.3s;
     width:100%;
     height:75px;
@@ -183,6 +195,7 @@ header nav ul li .dropdown-menu li a:hover {
 }
 .cta-button a{
     color:white;
+    text-decoration: none;
 }
 .cta-button a:hover {
     color: #007bff; /* Color change on hover */
@@ -212,6 +225,7 @@ header nav ul li .dropdown-menu li a:hover {
     height:60%;
     padding-top:10%;
 }
+
 .step{
     display:flex;
     flex-direction: column;
@@ -269,8 +283,9 @@ header nav ul li .dropdown-menu li a:hover {
 }
 #testimonials h2{
     text-align: center;
-    font-size: 3.5em;
+    font-size: 2.5em;
     color: #0A88FF;
+    padding-top:20px;
 }
 .testimonial{
     height:100%;
