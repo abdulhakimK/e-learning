@@ -11,6 +11,17 @@ body, html {
 html {
     scroll-behavior: smooth;
 }
+/* Animation */
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%); /* Start completely off the screen to the left */
+        opacity: 0; /* Start invisible */
+    }
+    100% {
+        transform: translateX(0); /* End at its original position */
+        opacity: 1; /* Fully visible */
+    }
+}
 /*--------------------------header-------------------------------------------------*/
 /* General header styling */
 header {
@@ -24,6 +35,7 @@ header {
     width:100%;
     height:auto;
     margin-top:15px;
+    position: relative;
 }
 
 /* Logo styling */
@@ -130,60 +142,58 @@ header nav ul li .dropdown-menu li a:hover {
 
 /*---------------------------hero section-------------------------------------------------*/
 #banner {
-    padding: 150px 0px 50px 0px;
     display: flex;
-    justify-content: end;
+    flex-flow: column;
+    justify-content: flex-start;
     align-items: center;
-    height:1000px;
     font-family: 'Poppins', sans-serif;
+    padding:0 50px; 
+}
+.banner-content{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.banner-content {
-    width: 35%; /* Adjust width for better alignment */
-    height:90%;
-    padding-left:0;
-    padding-top:100px;
-}
 
 .bannerPic {
-    height:90%;
+    height:50%;
     width:55%;
     align-self: center;
     object-fit: contain;
     flex-shrink: 0;
 }
 .welcome {
-    font-size: 2.3rem; /* Adjust based on visual balance */
+    font-size: 1.8rem; /* Adjust based on visual balance */
     color: #0A88FF;
-    width:100%;
+    animation: slideIn 2s ease-in-out infinite;
+
 }
 
 #banner p {
-    font-size: 2.2rem;
+    font-size: 1.5rem;
     line-height: 1.5;
     width: 100%;
-    height:45%;
     color:#304D6D;
 }
 .cta-button{
     background-color: #545E75; /* Primary button color */
     color: white;
     border: none;
-    padding: 10px 20px;
+    padding: 10px 30px;
     font-family: 'Poppins', sans-serif;
-    font-size:2em;
+    font-size:1.5em;
     font-weight: bold;
     border-radius: 50px;
-    cursor: pointer;
     transition: background-color 0.3s;
-    width:500px;
-    height:75px;
 }
 .cta-button:hover {
     background-color: #545e7585; /* Darker color on hover */
 }
 .cta-button a{
     color:white;
+    text-decoration: none;
 }
 .cta-button a:hover {
     color: #007bff; /* Color change on hover */
@@ -213,6 +223,7 @@ header nav ul li .dropdown-menu li a:hover {
     height:60%;
     padding-top:200px;
 }
+
 .step{
     display:flex;
     flex-direction: column;
@@ -247,8 +258,6 @@ header nav ul li .dropdown-menu li a:hover {
 }
 /*-------------------------testimonials section----------------------------------------*/
 #testimonials{
-    padding: 50px;
-    height:1200px;
     width:100%;
     font-family: 'Poppins', sans-serif;
     background-color: #C4CFD9;
@@ -260,23 +269,23 @@ header nav ul li .dropdown-menu li a:hover {
 }
 .testimonials-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Create 2 equal columns */
-    grid-gap: 50px 350px; /* Space between the boxes */
-    justify-content:stretch ; /* Center the grid within the container */
-    align-items: stretch; /* Vertically align items */
-    padding: 20px; /* Optional: Add padding around the grid*/
-    width:80%;
-    height:65%;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(2, 1fr); 
+    gap: 40px 40px; 
+    justify-content: center; 
+    align-items: center; 
+    padding: 20px; 
+    overflow-x: auto; 
 }
+
 #testimonials h2{
     text-align: center;
-    font-size: 3.5em;
+    font-size: 2.5em;
     color: #0A88FF;
+    padding-top:20px;
 }
 .testimonial{
-    height:100%;
     background-color:#D5E1EC;
-    width:100%;
     border-radius: 15px;
     display:flex;
     justify-content: space-around;
@@ -289,9 +298,7 @@ header nav ul li .dropdown-menu li a:hover {
 .testimonial .personel .name{
     text-align: center;
 }
-.testimonial .review{
-    width:450px;
-}
+
 .testimonial .review h4{
     font-size: 1.5em;
     color: #0A88FF;

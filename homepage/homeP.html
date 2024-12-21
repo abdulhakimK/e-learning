@@ -32,20 +32,8 @@
     <!-- Main Banner Section -->
     <section id="banner">
         <div class="banner-content">
-            <h1 class="welcome"></h1>
-            <script>
-                    const welcomeMessage = "Learn, Grow, Succeed—With eduSphere";
-                    let charIndex = 0;
-                    const messageElement = document.querySelector('.welcome');
-                    function typeEffect() {
-                        if (charIndex < welcomeMessage.length) {
-                            messageElement.textContent += welcomeMessage.charAt(charIndex);
-                            charIndex++;
-                            setTimeout(typeEffect, 100);/*the setTimeout function calls the typeEffect function after a delay of 100 milliseconds until the charIndex is less than the length of the welcomeMessage. If the condition is false, the function stops there and doesn't execute the setTimeout(typeEffect, 100); that how we stop the function calling it self*/
-                        }
-                    }
-                    typeEffect();
-            </script>
+            <h1 class="welcome">Learn, Grow, Succeed—With eduSphere</h1>
+            
             <p>Welcome to eduSphere, your trusted 
                 gateway to knowledge and skills. Here, 
                 education meets flexibility. Our platform 
@@ -82,7 +70,7 @@
     <section id="testimonials">
         <h2>What the Students Say About Us?</h2>
         <div class="testimonials-container">
-            <div class="testimonial t1">
+            <div class="testimonial">
                 <div class="personel">
                     <img src="../pictures/Personal Branding Photography _ Dallas, Fort Worth, Austin, Denver.jpg" class="person">
                     <p class="name">Sofia Martinez</p>
@@ -115,7 +103,7 @@
                         throughout your code life..."</p>
                 </div>
             </div>
-            <div class="testimonial t1">
+            <div class="testimonial">
                 <div class="personel">
                     <img src="../pictures/download.jpg" class="person">
                     <p class="name">Grace Thompson</p>
