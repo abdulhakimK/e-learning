@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     const correctAnswers = {
-    q1: "Specifies the destination URL",
+    q1: " Specifies the destination URL ",
     q2: "Add target attribute with value _blank to the link tag",
 };
 document.getElementById("submit").addEventListener("click", function () {
